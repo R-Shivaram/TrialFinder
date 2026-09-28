@@ -1,0 +1,1566 @@
+{
+  "NCT07661368|claude-opus-5": {
+    "nct_id": "NCT07661368",
+    "model": "claude-opus-5",
+    "seconds": 8.2,
+    "input_tokens": 1771,
+    "output_tokens": 689,
+    "cost_usd": 0.0261,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 50 and 75 years old?",
+        "original_text": "Age: 50 - 75 yrs",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you scored 5 or higher on the American Diabetes Association (ADA) diabetes risk screener?",
+        "original_text": "Score of 5 or greater on ADA (diabetes) screener",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Does someone in your family have dementia or Alzheimer's disease (a brain illness that affects memory and thinking)?",
+        "original_text": "Self-report family history of dementia or AD",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a smartphone (iPhone or Android)?",
+        "original_text": "Smartphone (iOS or Android)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you able to give spoken and written informed consent to join a study?",
+        "original_text": "Verbal and written informed consent",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have any food allergies?",
+        "original_text": "Food allergies or conditions requiring a specialized diet that would limit participation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a health condition that requires you to follow a special diet?",
+        "original_text": "Food allergies or conditions requiring a specialized diet that would limit participation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07661368|claude-sonnet-5": {
+    "nct_id": "NCT07661368",
+    "model": "claude-sonnet-5",
+    "seconds": 4.4,
+    "input_tokens": 1771,
+    "output_tokens": 492,
+    "cost_usd": 0.0085,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 50 and 75 years old?",
+        "original_text": "Age: 50 - 75 yrs",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Did you score 5 or higher on the ADA (American Diabetes Association) diabetes risk screener?",
+        "original_text": "Score of 5 or greater on ADA (diabetes) screener",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a family history of dementia or Alzheimer's disease?",
+        "original_text": "Self-report family history of dementia or AD",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a smartphone (iPhone or Android)?",
+        "original_text": "Smartphone (iOS or Android)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you willing and able to give verbal and written informed consent?",
+        "original_text": "Verbal and written informed consent",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have food allergies or a condition that requires a special diet that would limit your participation?",
+        "original_text": "Food allergies or conditions requiring a specialized diet that would limit participation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT05933161|claude-opus-5": {
+    "nct_id": "NCT05933161",
+    "model": "claude-opus-5",
+    "seconds": 7.6,
+    "input_tokens": 1848,
+    "output_tokens": 718,
+    "cost_usd": 0.0272,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Have you had a heart pump (LVAD, either HeartWare or HeartMate 3) implanted at any time after 2010?",
+        "original_text": "Prior implantation of contemporary, centrifugal flow LVAD (HeartWare or HeartMate 3) at any time after 2010",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes?",
+        "original_text": "Diagnosis of type II diabetes mellitus",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you taking any medicine to lower your blood sugar?",
+        "original_text": "Any antihyperglycemic regimen",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has it been more than 3 months since your LVAD was implanted?",
+        "original_text": "Greater than 3 months out from LVAD implantation",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Can you use a smartphone to run the LibreLink app and upload your blood sugar data?",
+        "original_text": "Capable of utilizing smartphone device for LibreLink app for uploading glycemic data",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you already use a continuous glucose monitor (CGM, a sensor that tracks your blood sugar all day)?",
+        "original_text": "Patients may be enrolled who have preexisting CGM in place.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 1 diabetes?",
+        "original_text": "Type I diabetics",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Would it be hard for you to come back for a visit 3 months later?",
+        "original_text": "Unable to return at 3 month evaluation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT05933161|claude-sonnet-5": {
+    "nct_id": "NCT05933161",
+    "model": "claude-sonnet-5",
+    "seconds": 5.3,
+    "input_tokens": 1848,
+    "output_tokens": 615,
+    "cost_usd": 0.0098,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Have you had a HeartWare or HeartMate 3 left ventricular assist device (LVAD) implanted at any time after 2010?",
+        "original_text": "Prior implantation of contemporary, centrifugal flow LVAD (HeartWare or HeartMate 3) at any time after 2010",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes?",
+        "original_text": "Diagnosis of type II diabetes mellitus",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you currently taking any medicine to lower your blood sugar?",
+        "original_text": "Any antihyperglycemic regimen",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Was your LVAD implanted more than 3 months ago?",
+        "original_text": "Greater than 3 months out from LVAD implantation",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a smartphone you can use with the LibreLink app to upload your blood sugar data?",
+        "original_text": "Capable of utilizing smartphone device for LibreLink app for uploading glycemic data",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes?",
+        "original_text": "Type I diabetics",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Would you be able to return for a follow-up visit at 3 months?",
+        "original_text": "Unable to return at 3 month evaluation",
+        "criterion_type": "exclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT06628453|claude-opus-5": {
+    "nct_id": "NCT06628453",
+    "model": "claude-opus-5",
+    "seconds": 10.2,
+    "input_tokens": 1923,
+    "output_tokens": 1067,
+    "cost_usd": 0.0363,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Do you have type 2 diabetes treated with daily insulin shots or diabetes pills?",
+        "original_text": "Type 2 diabetes mellitus treated with daily insulin injections or oral hypoglycemic agents diagnosed before pregnancy or at less than 14 weeks gestation with hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Was your diabetes diagnosed before you became pregnant, or before 14 weeks of pregnancy?",
+        "original_text": "Type 2 diabetes mellitus treated with daily insulin injections or oral hypoglycemic agents diagnosed before pregnancy or at less than 14 weeks gestation with hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your A1c (a blood test showing your average blood sugar over about 3 months) 6.5% or higher?",
+        "original_text": "Type 2 diabetes mellitus treated with daily insulin injections or oral hypoglycemic agents diagnosed before pregnancy or at less than 14 weeks gestation with hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant and between 6 weeks and less than 23 weeks along?",
+        "original_text": "Pregnant with viable fetus at 6 to less than 23 weeks gestation",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you between 18 and 50 years old?",
+        "original_text": "Maternal age 18-50 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a skin condition or a reaction to medical adhesives (sticky patches) that would keep you from wearing a sensor on your skin?",
+        "original_text": "Unable or unwilling to wear CGM due to intolerance to medical-grade adhesives or skin conditions",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant with twins or more?",
+        "original_text": "Multiple gestation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you been told your baby has a major birth defect, or two or more minor ones?",
+        "original_text": "Major fetal anomaly or two or more minor fetal anomalies",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you taking part in another clinical study with a treatment or device right now?",
+        "original_text": "Participating in another conflicting interventional study",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Did you take part in this same trial during an earlier pregnancy?",
+        "original_text": "Participation in this trial in a previous pregnancy",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  },
+  "NCT06628453|claude-sonnet-5": {
+    "nct_id": "NCT06628453",
+    "model": "claude-sonnet-5",
+    "seconds": 8.8,
+    "input_tokens": 1923,
+    "output_tokens": 1009,
+    "cost_usd": 0.0139,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Do you have type 2 diabetes that is treated with daily insulin shots or diabetes pills?",
+        "original_text": "Type 2 diabetes mellitus treated with daily insulin injections or oral hypoglycemic agents diagnosed before pregnancy or at less than 14 weeks gestation with hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Was your type 2 diabetes diagnosed before pregnancy or before 14 weeks of pregnancy?",
+        "original_text": "diagnosed before pregnancy or at less than 14 weeks gestation with hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your A1c (a blood test showing your average blood sugar over about 3 months) 6.5% or higher?",
+        "original_text": "hemoglobin A1c 6.5% or greater",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you currently pregnant with one baby that has a heartbeat, between 6 and less than 23 weeks along?",
+        "original_text": "Pregnant with viable fetus at 6 to less than 23 weeks gestation",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you between 18 and 50 years old?",
+        "original_text": "Maternal age 18-50 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you unable or unwilling to wear a continuous glucose monitor (CGM) because of a skin condition or an allergy to medical adhesives?",
+        "original_text": "Unable or unwilling to wear CGM due to intolerance to medical-grade adhesives or skin conditions",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant with more than one baby (twins or more)?",
+        "original_text": "Multiple gestation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Has your baby been found to have a major birth defect, or two or more minor birth defects?",
+        "original_text": "Major fetal anomaly or two or more minor fetal anomalies",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you plan to deliver your baby at a hospital outside the study's network?",
+        "original_text": "Planned delivery outside study consortium",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you taken part in this same study during an earlier pregnancy?",
+        "original_text": "Participation in this trial in a previous pregnancy",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT05317585|claude-opus-5": {
+    "nct_id": "NCT05317585",
+    "model": "claude-opus-5",
+    "seconds": 9.4,
+    "input_tokens": 1992,
+    "output_tokens": 916,
+    "cost_usd": 0.0329,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 18 years old or older?",
+        "original_text": "1\\) age greater than or equal to 18 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant with one baby (not twins or more)?",
+        "original_text": "2\\) singleton gestation less than or equal to 14 weeks at initial obstetric visit",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "At your first pregnancy visit, were you 14 weeks pregnant or less?",
+        "original_text": "2\\) singleton gestation less than or equal to 14 weeks at initial obstetric visit",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes based on blood tests, such as an A1c (a blood test showing your average blood sugar over about 3 months) of 6.5% or higher, a glucose tolerance test of 200 mg/dL or higher, or a fasting blood sugar of 126 mg/dL or higher?",
+        "original_text": "3\\) established diagnosis of T2DM by laboratory criteria including hemoglobin A1c ≥6.5%, oral glucose tolerance test ≥200 mg/dL, or fasting plasma glucose ≥126 mg/dL",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you get your pregnancy care at UMASS Memorial Health Care (UMMHC) and plan to give birth there?",
+        "original_text": "4\\) receiving prenatal care at UMASS Memorial Health Care (UMMHC) and plans to deliver at UMMHC",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you been diagnosed with type 1 diabetes or gestational diabetes (diabetes that starts during pregnancy)?",
+        "original_text": "1\\) known diagnosis of type 1 diabetes or gestational diabetes",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you plan to get your pregnancy care or give birth somewhere other than UMMHC?",
+        "original_text": "2\\) plan to receive prenatal care or delivery outside of UMMHC",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you pregnant with twins or more babies?",
+        "original_text": "4\\) multifetal gestation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  },
+  "NCT05317585|claude-sonnet-5": {
+    "nct_id": "NCT05317585",
+    "model": "claude-sonnet-5",
+    "seconds": 7.2,
+    "input_tokens": 1992,
+    "output_tokens": 888,
+    "cost_usd": 0.0129,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 18 years old or older?",
+        "original_text": "1) age greater than or equal to 18 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant with one baby (not twins or more), and are you 14 weeks pregnant or less at your first prenatal visit?",
+        "original_text": "2) singleton gestation less than or equal to 14 weeks at initial obstetric visit",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes based on lab results, such as an A1c (average blood sugar test) of 6.5% or higher, an oral glucose tolerance test of 200 mg/dL or higher, or a fasting blood sugar of 126 mg/dL or higher?",
+        "original_text": "3) established diagnosis of T2DM by laboratory criteria including hemoglobin A1c ≥6.5%, oral glucose tolerance test ≥200 mg/dL, or fasting plasma glucose ≥126 mg/dL",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you getting your prenatal care at UMASS Memorial Health Care (UMMHC) and planning to deliver your baby there?",
+        "original_text": "4) receiving prenatal care at UMASS Memorial Health Care (UMMHC) and plans to deliver at UMMHC",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you able and willing to give informed consent to join this study?",
+        "original_text": "5) able and willing to provide informed consent",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 1 diabetes or gestational diabetes (diabetes that starts during pregnancy)?",
+        "original_text": "1) known diagnosis of type 1 diabetes or gestational diabetes",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you plan to get prenatal care or deliver your baby somewhere other than UMMHC?",
+        "original_text": "2) plan to receive prenatal care or delivery outside of UMMHC",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant with twins or more than one baby?",
+        "original_text": "4) multifetal gestation",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  },
+  "NCT06739122|claude-opus-5": {
+    "nct_id": "NCT06739122",
+    "model": "claude-opus-5",
+    "seconds": 11.3,
+    "input_tokens": 2115,
+    "output_tokens": 1216,
+    "cost_usd": 0.041,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Do you have type 2 diabetes that is treated with diet and exercise plus metformin and/or basal (long-acting) insulin?",
+        "original_text": "Have Type 2 diabetes treated with diet and exercise and metformin and/or basal insulin.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your metformin and/or basal insulin dose stayed the same for at least 8 weeks?",
+        "original_text": "Metformin and/or basal insulin dose must be stable for at least 8 weeks prior to screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your body weight 50 kilograms (about 110 pounds) or more?",
+        "original_text": "Have a body weight ≥50 kilograms (kg) and Body Mass Index (BMI) of \\>85th percentile",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes?",
+        "original_text": "Have Type 1 diabetes",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 8 weeks, have you taken any diabetes medicine other than metformin, basal insulin, or dulaglutide?",
+        "original_text": "Have received treatment with any glucose-lowering agent(s) other than metformin, basal insulin, or dulaglutide within 8 weeks prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Since your type 2 diabetes was diagnosed, have you ever had diabetic ketoacidosis or hyperosmolar syndrome (serious diabetes emergencies needing urgent care)?",
+        "original_text": "After the Type 2 diabetes diagnosis, have a history of diabetic ketoacidosis or hyperosmolar syndrome",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the last 6 months, have you had an episode of severe low blood sugar, or low blood sugar you could not feel coming on?",
+        "original_text": "Have had ≥1 episode of severe hypoglycemia and/or ≥1 episode of hypoglycemic unawareness within the last 6 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you or a family member ever had medullary thyroid cancer or multiple endocrine neoplasia syndrome type 2 (a rare inherited gland disease)?",
+        "original_text": "Have family or personal history of medullary thyroid carcinoma (MTC) or multiple endocrine neoplasia syndrome type 2 (MEN2)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had long-lasting or repeated pancreatitis (swelling of the pancreas), or gallbladder disease?",
+        "original_text": "Have prior chronic, recurrent, or idiopathic pancreatitis, or known gallbladder disease",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 8 weeks, have you taken any prescription or over-the-counter medicine to help you lose weight?",
+        "original_text": "Have been treated with prescription drugs or over-the-counter medications that promote weight loss within 8 weeks prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT06739122|claude-sonnet-5": {
+    "nct_id": "NCT06739122",
+    "model": "claude-sonnet-5",
+    "seconds": 8.8,
+    "input_tokens": 2115,
+    "output_tokens": 1178,
+    "cost_usd": 0.016,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Do you have type 2 diabetes that is being treated with diet, exercise, and metformin and/or basal insulin?",
+        "original_text": "Have Type 2 diabetes treated with diet and exercise and metformin and/or basal insulin.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your metformin and/or basal insulin dose stayed the same for at least 8 weeks before screening?",
+        "original_text": "Metformin and/or basal insulin dose must be stable for at least 8 weeks prior to screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you weigh 50 kilograms (about 110 pounds) or more?",
+        "original_text": "Have a body weight ≥50 kilograms (kg)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your Body Mass Index (BMI) above the 85th percentile for your age and sex?",
+        "original_text": "Body Mass Index (BMI) of >85th percentile",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes?",
+        "original_text": "Have Type 1 diabetes",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you taken any glucose-lowering medicine other than metformin, basal insulin, or dulaglutide within the last 8 weeks before screening?",
+        "original_text": "Have received treatment with any glucose-lowering agent(s) other than metformin, basal insulin, or dulaglutide within 8 weeks prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Since being diagnosed with type 2 diabetes, have you had an episode of diabetic ketoacidosis or hyperosmolar syndrome (serious high blood sugar emergencies)?",
+        "original_text": "After the Type 2 diabetes diagnosis, have a history of diabetic ketoacidosis or hyperosmolar syndrome",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the last 6 months, have you had a severe low blood sugar episode or times when you couldn't feel your blood sugar dropping?",
+        "original_text": "Have had ≥1 episode of severe hypoglycemia and/or ≥1 episode of hypoglycemic unawareness within the last 6 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you or a family member have a history of medullary thyroid carcinoma (a type of thyroid cancer) or multiple endocrine neoplasia syndrome type 2 (MEN2)?",
+        "original_text": "Have family or personal history of medullary thyroid carcinoma (MTC) or multiple endocrine neoplasia syndrome type 2 (MEN2)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a history of long-term or repeated pancreatitis (pancreas inflammation), or known gallbladder disease?",
+        "original_text": "Have prior chronic, recurrent, or idiopathic pancreatitis, or known gallbladder disease",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07554443|claude-opus-5": {
+    "nct_id": "NCT07554443",
+    "model": "claude-opus-5",
+    "seconds": 9.2,
+    "input_tokens": 2117,
+    "output_tokens": 968,
+    "cost_usd": 0.0348,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 60 years of age or older?",
+        "original_text": "Be 60 years of age or older",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with peripheral neuropathy (nerve damage) with loss of feeling in the soles of your feet?",
+        "original_text": "Have a diagnosis of PN with plantar sensory loss",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Can you walk on your own for at least 6 minutes without a cane, walker, or other walking aid? (Rest breaks are allowed.)",
+        "original_text": "Be able to walk independently for at least 6 minutes without the use of an assistive device (rest breaks permitted)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Can you stand on one leg for less than 23 seconds?",
+        "original_text": "Demonstrate balance impairment, defined as a Single-Leg Stance time of \\<23 seconds",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a blood clot in a vein or swollen, inflamed veins (such as deep vein thrombosis)?",
+        "original_text": "Self-reported acute thrombophlebitis, including deep vein thrombosis",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have severe peripheral vascular disease (poor blood flow in your legs)?",
+        "original_text": "Self-reported severe peripheral vascular disease",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a sore, swelling, infection, or rash on your lower leg that has not been treated?",
+        "original_text": "Untreated lesion of any kind, swelling, infection, inflamed area of skin or eruptions on the lower leg near product use",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have another nerve or muscle/bone condition that makes walking moderately or severely harder?",
+        "original_text": "Other neurological or musculoskeletal conditions that moderately or severely impact walking",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you wear an ankle-foot brace to walk?",
+        "original_text": "Use of ankle-foot orthosis for ambulation that prevents donning of Walkasins",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you weigh more than 300 pounds?",
+        "original_text": "Weight of more than 300 pounds",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07554443|claude-sonnet-5": {
+    "nct_id": "NCT07554443",
+    "model": "claude-sonnet-5",
+    "seconds": 7.2,
+    "input_tokens": 2117,
+    "output_tokens": 979,
+    "cost_usd": 0.014,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 60 years of age or older?",
+        "original_text": "Be 60 years of age or older",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with peripheral neuropathy (PN) with loss of feeling in the soles of your feet?",
+        "original_text": "Have a diagnosis of PN with plantar sensory loss",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Can you stand on one leg for less than 23 seconds (a test of balance)?",
+        "original_text": "Demonstrate balance impairment, defined as a Single-Leg Stance time of <23 seconds",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Can you walk on your own for at least 6 minutes without using a cane, walker, or other assistive device?",
+        "original_text": "Be able to walk independently for at least 6 minutes without the use of an assistive device (rest breaks permitted)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had a blood clot in a vein, such as deep vein thrombosis or thrombophlebitis?",
+        "original_text": "Self-reported acute thrombophlebitis, including deep vein thrombosis",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have severe peripheral vascular disease (poor blood flow in your legs)?",
+        "original_text": "Self-reported severe peripheral vascular disease",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have untreated lymphedema (swelling caused by fluid buildup)?",
+        "original_text": "Untreated lymphedema",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have any untreated wound, swelling, infection, or skin problem on your lower leg near where the device would be worn?",
+        "original_text": "Untreated lesion of any kind, swelling, infection, inflamed area of skin or eruptions on the lower leg near product use",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have any untreated broken bones in your foot or ankle?",
+        "original_text": "Self-reported, untreated fractures in the foot and ankle",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Does your current weight exceed 300 pounds?",
+        "original_text": "Weight of more than 300 pounds",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07527650|claude-opus-5": {
+    "nct_id": "NCT07527650",
+    "model": "claude-opus-5",
+    "seconds": 12.6,
+    "input_tokens": 2258,
+    "output_tokens": 1359,
+    "cost_usd": 0.0453,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 18 and 75 years old?",
+        "original_text": "United States: 18 to 75 years (inclusive)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has a doctor told you that you have type 2 diabetes, with an A1c (a blood test showing your average blood sugar over about 3 months) of 7.0% or higher and 10.0% or lower?",
+        "original_text": "Diagnosed with type 2 diabetes mellitus (T2DM) with HbA1c ≥7.0% and ≤10.0% at screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "For the past 3 months or longer, have you managed your diabetes with diet and exercise alone, or with a steady dose of metformin of at least 1000 mg a day?",
+        "original_text": "Treated with diet and exercise alone or on a stable dose of metformin (≥1000 mg/day) for at least 3 months prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index, a number based on your height and weight) between 25 and 50 kg/m²?",
+        "original_text": "BMI ≥25 kg/m² and ≤50 kg/m²",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your body weight stayed within 5% of the same over the past 3 months?",
+        "original_text": "Body weight change \\<5% over the past 3 months prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes, or have you used any diabetes medicine other than metformin in the past 3 months?",
+        "original_text": "Type 1 diabetes mellitus or use of glucose-lowering medications other than metformin within 3 months prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 6 months, have you had diabetic ketoacidosis (a serious problem from very high blood sugar) or severe low blood sugar?",
+        "original_text": "History of diabetic ketoacidosis or severe hypoglycemia within 6 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 3 months, have you had a heart attack, a stroke, or a heart procedure to open blocked arteries, or do you have severe heart failure?",
+        "original_text": "Clinically significant cardiovascular disease (e.g., NYHA class III/IV heart failure, recent myocardial infarction, stroke, or revascularization within 3 months)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had pancreatitis (swelling of the pancreas)?",
+        "original_text": "History of pancreatitis or factors increasing the risk of pancreatitis",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you or a family member ever had medullary thyroid cancer or multiple endocrine neoplasia type 2 (a rare inherited gland disorder)?",
+        "original_text": "Personal or family history of medullary thyroid carcinoma (MTC) or multiple endocrine neoplasia type 2",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you taken part in another research study of an investigational drug in the past 30 days, or in a GLP-1 or weight loss study in the past 3 months?",
+        "original_text": "Participation in another investigational study within 30 days or within 5 half-lives of the investigational product, whichever is longer; for GLP-1 receptor agonist-related or weight loss studies, participation within 3 months prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07527650|claude-sonnet-5": {
+    "nct_id": "NCT07527650",
+    "model": "claude-sonnet-5",
+    "seconds": 10.1,
+    "input_tokens": 2258,
+    "output_tokens": 1209,
+    "cost_usd": 0.0166,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 18 and 75 years old?",
+        "original_text": "United States: 18 to 75 years (inclusive)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 2 diabetes with an A1c (a blood test showing your average blood sugar over about 3 months) between 7.0% and 10.0% at your screening visit?",
+        "original_text": "Diagnosed with type 2 diabetes mellitus (T2DM) with HbA1c ≥7.0% and ≤10.0% at screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been treated only with diet and exercise, or on a steady dose of metformin (at least 1000 mg per day) for at least 3 months before screening?",
+        "original_text": "Treated with diet and exercise alone or on a stable dose of metformin (≥1000 mg/day) for at least 3 months prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your body mass index (BMI) between 25 and 50 kg/m²?",
+        "original_text": "BMI ≥25 kg/m² and ≤50 kg/m²",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your body weight changed by less than 5% over the past 3 months?",
+        "original_text": "Body weight change <5% over the past 3 months prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes, or have you used glucose-lowering medicines other than metformin in the past 3 months?",
+        "original_text": "Type 1 diabetes mellitus or use of glucose-lowering medications other than metformin within 3 months prior to screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had diabetic ketoacidosis or a severe low blood sugar (hypoglycemia) event in the past 6 months?",
+        "original_text": "History of diabetic ketoacidosis or severe hypoglycemia within 6 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had a serious heart problem, such as advanced heart failure, a recent heart attack, stroke, or a heart procedure within the past 3 months?",
+        "original_text": "Clinically significant cardiovascular disease (e.g., NYHA class III/IV heart failure, recent myocardial infarction, stroke, or revascularization within 3 months)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you or a family member ever been diagnosed with medullary thyroid cancer or multiple endocrine neoplasia type 2?",
+        "original_text": "Personal or family history of medullary thyroid carcinoma (MTC) or multiple endocrine neoplasia type 2",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have serious liver disease, or kidney problems with an eGFR (a measure of kidney function) below 60 mL/min/1.73 m²?",
+        "original_text": "Clinically significant liver disease, renal impairment (eGFR <60 mL/min/1.73 m²), or abnormal laboratory findings at screening",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT05322213|claude-opus-5": {
+    "nct_id": "NCT05322213",
+    "model": "claude-opus-5",
+    "seconds": 10.0,
+    "input_tokens": 2463,
+    "output_tokens": 1072,
+    "cost_usd": 0.0391,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 21 and 70 years old?",
+        "original_text": "Males and Females 21-70 years old at the time of screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes and stayed on the same diabetes medicines for at least 3 months?",
+        "original_text": "Have a clinical diagnosis of Type 2 Diabetes on a stable medication regimen for at least 3 months.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index, based on your height and weight) higher than 25 kg/m2?",
+        "original_text": "BMI \\> 25 kg/m2).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your HbA1c (a blood test showing your average blood sugar over about 3 months) below 10%?",
+        "original_text": "HbA1c \\< 10%).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you use insulin to treat your type 2 diabetes?",
+        "original_text": "Current use of insulin to treat Type 2 Diabetes.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you used any products containing THC (the active ingredient in cannabis or marijuana) in the past 30 days?",
+        "original_text": "Use of any THC containing products within 30 days prior to the screening visit.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you currently use tobacco products?",
+        "original_text": "Current use of tobacco products.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Individuals who are pregnant or lactating/breastfeeding.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you ever had a heart attack, a stroke, or heart failure?",
+        "original_text": "No prior history of myocardial infarction, stroke or heart failure.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had seizures, a head injury, or another brain injury?",
+        "original_text": "History of seizures, head trauma, or other history of CNS insult that could predispose the participant to seizures.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had a bad reaction to cannabis, such as severe anxiety or panic, paranoia, a fast heartbeat, or very low blood pressure?",
+        "original_text": "History of clinically significant adverse events associated with cannabis intoxication (e.g., severe anxiety and panic, paranoia and psychosis, sustained tachycardia, or severe hypotension).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  },
+  "NCT05322213|claude-sonnet-5": {
+    "nct_id": "NCT05322213",
+    "model": "claude-sonnet-5",
+    "seconds": 7.3,
+    "input_tokens": 2463,
+    "output_tokens": 888,
+    "cost_usd": 0.0138,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 21 and 70 years old?",
+        "original_text": "Males and Females 21-70 years old at the time of screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes and been on a stable medicine plan for at least 3 months?",
+        "original_text": "Have a clinical diagnosis of Type 2 Diabetes on a stable medication regimen for at least 3 months.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index) more than 25 kg/m2?",
+        "original_text": "BMI \\> 25 kg/m2).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your most recent A1c (a blood test showing your average blood sugar over about 3 months) below 10%?",
+        "original_text": "HbA1c \\< 10%).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you currently use tobacco products?",
+        "original_text": "Current use of tobacco products.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you currently use insulin to treat your type 2 diabetes?",
+        "original_text": "Current use of insulin to treat Type 2 Diabetes.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you used any THC-containing products (such as marijuana) in the past 30 days?",
+        "original_text": "Use of any THC containing products within 30 days prior to the screening visit.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Individuals who are pregnant or lactating/breastfeeding.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you had a heart attack, stroke, or heart failure in the past?",
+        "original_text": "No prior history of myocardial infarction, stroke or heart failure.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had a seizure or a head injury that could make you more likely to have seizures?",
+        "original_text": "History of seizures, head trauma, or other history of CNS insult that could predispose the participant to seizures.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  },
+  "NCT06884059|claude-opus-5": {
+    "nct_id": "NCT06884059",
+    "model": "claude-opus-5",
+    "seconds": 10.7,
+    "input_tokens": 3131,
+    "output_tokens": 1093,
+    "cost_usd": 0.043,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 18 and 75 years old?",
+        "original_text": "Age: 18-75 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 2 diabetes with an A1c (a blood test showing your average blood sugar over about 3 months) between 6.5% and 9.0%?",
+        "original_text": "Participants with T2DM with A1c between 6.5 and 9.0 % and on stable doses of medications who are weight-bearing and self-ambulatory.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you willing to use a smartphone (Apple iOS or Android) for study tasks?",
+        "original_text": "Willingness to use smartphone for research procedures (Apple iOS or Android OS)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you take insulin or sulfonylurea pills (such as glipizide, glyburide, or glimepiride)?",
+        "original_text": "Participants with Type1DM and T2DM who are taking insulin, sulfonylureas, or have an HbA1c \\> 9 %.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been told you have type 1 diabetes?",
+        "original_text": "Known history of type I diabetes.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you currently use tobacco or illicit drugs?",
+        "original_text": "Active tobacco or illicit drug use",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Pregnant or breastfeeding individuals.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you currently taking part in a weight-loss or weight-management program?",
+        "original_text": "Currently enrolled in a weight-loss or weight-management program,",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had an eating disorder?",
+        "original_text": "History of eating disorder(s).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "In the past 6 months, have you had a heart attack, heart stent or bypass surgery, a hospital stay for heart failure, or a stroke or mini-stroke (TIA)?",
+        "original_text": "A major adverse cardiovascular event within the past 6 months such as acute coronary syndrome (ACS), percutaneous coronary intervention, coronary artery bypass graft surgery, hospitalization for congestive heart failure, stroke/transient ischemic attack (TIA).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you work night shifts or shifts with changing hours?",
+        "original_text": "Shift workers with variable (e.g., nocturnal) hours.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT06884059|claude-sonnet-5": {
+    "nct_id": "NCT06884059",
+    "model": "claude-sonnet-5",
+    "seconds": 8.7,
+    "input_tokens": 3131,
+    "output_tokens": 1055,
+    "cost_usd": 0.0168,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you between 18 and 75 years old?",
+        "original_text": "Age: 18-75 years old",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 2 diabetes with an A1c (a blood test showing average blood sugar over about 3 months) between 6.5% and 9.0%?",
+        "original_text": "Participants with T2DM with A1c between 6.5 and 9.0 % and on stable doses of medications who are weight-bearing and self-ambulatory.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you take insulin or sulfonylurea medicines for diabetes, or have type 1 diabetes, or is your A1c above 9%?",
+        "original_text": "Participants with Type1DM and T2DM who are taking insulin, sulfonylureas, or have an HbA1c > 9 %.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you know your recent kidney function test (eGFR, a measure of kidney function) result, and is it 45 or above?",
+        "original_text": "Estimated Glomerular Filtration Rate (EGFR) > 45",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your blood pressure recently been higher than 160/110 mmHg (with or without treatment)?",
+        "original_text": "Systolic BP greater than 160 mmHg and/or Diastolic BP greater than 110 mmHg (with or without treatment/medication)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Pregnant or breastfeeding individuals.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you currently use tobacco or illegal drugs?",
+        "original_text": "Active tobacco or illicit drug use",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you currently enrolled in a weight-loss or weight-management program?",
+        "original_text": "Currently enrolled in a weight-loss or weight-management program,",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had an eating disorder?",
+        "original_text": "History of eating disorder(s).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you had a major heart problem (such as a heart attack, stroke, or heart failure hospitalization) within the past year?",
+        "original_text": "History of major adverse cardiovascular events within the past 1 year (acute coronary syndrome (ACS), percutaneous coronary intervention, coronary artery bypass graft surgery, hospitalization for congestive heart failure, stroke/transient ischemic attack (TIA)).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07724340|claude-opus-5": {
+    "nct_id": "NCT07724340",
+    "model": "claude-opus-5",
+    "seconds": 17.5,
+    "input_tokens": 3958,
+    "output_tokens": 1806,
+    "cost_usd": 0.0649,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 18 years old or older?",
+        "original_text": "Female and male participants ≥18 years of age at time of consent",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index, a measure based on your height and weight) 27.0 kg/m2 or higher?",
+        "original_text": "BMI g ≥27.0 kg/m2 at screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your HbA1c (a blood test showing your average blood sugar over about 3 months) between 7% and 10%?",
+        "original_text": "HbA1c ≥7 and ≤10% (53-86 mmol/mol) at screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had type 2 diabetes for at least 180 days (about 6 months)?",
+        "original_text": "Diagnosis of type 2 diabetes mellitus for ≥ 180 days prior to screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you manage your diabetes with diet and exercise alone, or with metformin, an SGLT2 inhibitor, a sulfonylurea, and/or a DPP4 inhibitor that you have taken without change for at least 90 days?",
+        "original_text": "Either treated with diet and exercise alone or on stable (at least 90 days prior to screening) treatment with metformin, a sodium-glucose cotransporter 2 (SGLT2) inhibitor, sulfonylurea, and/or DPP4 inhibitor as monotherapy or combination therapy, per approved local label.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you currently breastfeeding?",
+        "original_text": "Non-lactating and has a negative pregnancy test at screening and baseline",
+        "criterion_type": "inclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you had gastric bypass, another weight loss surgery, or a similar stomach or intestine procedure?",
+        "original_text": "Participant has had gastric bypass or other bariatric surgery or endoscopic procedure or any metabolic procedures (e.g. duodenal resurfacing, intragastric balloon, etc.) except for the following:",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your body weight changed by more than 5% in the past 3 months?",
+        "original_text": "Participant has had a self-reported or medically recorded change in body weight \\> 5% within 3 months of screening OR has recorded change in body weight \\>3% between screening and randomization.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you using insulin now, or have you used it in the past 3 months?",
+        "original_text": "Participant is currently using insulin or used insulin within 3 months before screening.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you used any weight loss medicine (such as orlistat, topiramate, phentermine, naltrexone, or bupropion) in the past 3 months?",
+        "original_text": "Participant is currently using or used within 3 months before screening any weight reducing medication including pramlintide, sibutramine, orlistat, zonisamide, topiramate, phentermine, naltrexone, bupropion.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you used a GLP-1 medicine (such as semaglutide, liraglutide, dulaglutide, or tirzepatide) in the past 6 months?",
+        "original_text": "Participant is currently using or used within 6 months before screening any medication that contains a GLP-1R agonist component or a GIPR modulator (either by prescription or as part of a clinical study)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you drink more than 14 units of alcohol a week (if you are a man) or more than 7 units a week (if you are a woman)? One unit is half a pint of beer, one glass of wine, or one measure of spirits.",
+        "original_text": "Participant's current alcohol intake exceeds 14 units/week for men or 7 units/week for women (1 unit = half pint of beer, 1 glass of wine, 1 measure of spirits).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you had a major mental health condition in the past 5 years, or ever attempted suicide?",
+        "original_text": "Participant has a history of major psychiatric disorders within 5 years or lifetime history of suicide attempt.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you or a family member have a history of medullary thyroid cancer or multiple endocrine neoplasia (MEN) syndrome type 2?",
+        "original_text": "Participant with a personal or family history of medullary thyroid carcinoma or with multiple endocrine neoplasia (MEN) syndrome type 2.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ]
+  },
+  "NCT07724340|claude-sonnet-5": {
+    "nct_id": "NCT07724340",
+    "model": "claude-sonnet-5",
+    "seconds": 8.9,
+    "input_tokens": 3958,
+    "output_tokens": 1228,
+    "cost_usd": 0.0202,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you 18 years of age or older?",
+        "original_text": "Female and male participants ≥18 years of age at time of consent",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index) 27.0 kg/m2 or higher?",
+        "original_text": "BMI g ≥27.0 kg/m2 at screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your most recent A1c (a blood test showing your average blood sugar over about 3 months) between 7% and 10%?",
+        "original_text": "HbA1c ≥7 and ≤10% (53-86 mmol/mol) at screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been diagnosed with type 2 diabetes for 180 days or longer?",
+        "original_text": "Diagnosis of type 2 diabetes mellitus for ≥ 180 days prior to screening.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you currently using insulin, or have you used insulin within the past 3 months?",
+        "original_text": "Participant is currently using insulin or used insulin within 3 months before screening.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Non-lactating and has a negative pregnancy test at screening and baseline",
+        "criterion_type": "inclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you had gastric bypass or other weight-loss (bariatric) surgery or procedures?",
+        "original_text": "Participant has had gastric bypass or other bariatric surgery or endoscopic procedure or any metabolic procedures (e.g. duodenal resurfacing, intragastric balloon, etc.) except for the following:",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Does your current alcohol intake exceed 14 drinks per week (if you are male) or 7 drinks per week (if you are female)?",
+        "original_text": "Participant's current alcohol intake exceeds 14 units/week for men or 7 units/week for women (1 unit = half pint of beer, 1 glass of wine, 1 measure of spirits).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Have you used any illegal drugs in the past 3 months?",
+        "original_text": "Participant has a recent history of illicit substance use (< 3 months) or in the opinion of the Investigator suspicion of current illicit substance use.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you have uncontrolled high blood pressure (top number 160 mmHg or higher, or bottom number 100 mmHg or higher)?",
+        "original_text": "Participant has uncontrolled hypertension at screening (SBP above or equal to 160 mmHg and/or diastolic blood pressure above or equal to 100 mmHg).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had a major psychiatric disorder in the past 5 years, or attempted suicide at any point in your life?",
+        "original_text": "Participant has a history of major psychiatric disorders within 5 years or lifetime history of suicide attempt.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ]
+  }
+}
