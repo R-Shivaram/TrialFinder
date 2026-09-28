@@ -57,7 +57,10 @@ function setupEventListeners() {
   tagChips.forEach(chip => {
     chip.addEventListener('click', () => {
       conditionInput.value = chip.dataset.condition;
-      zipInput.value = chip.dataset.zip;
+      // Keep existing zip if user already typed one; only use default if empty
+      if (!zipInput.value.trim()) {
+        zipInput.value = chip.dataset.zip;
+      }
       clearErrors();
       handleSearch();
     });
@@ -123,12 +126,17 @@ async function handleSearch() {
   try {
     // Step 1: Attempt to convert zip code to GPS coordinates for radius search
     const geo = await lookupZipCoordinates(zip);
+    if (!geo) {
+      errorMessage.textContent = "We couldn't find that zip code. Please check it and try again.";
+      showView('error');
+      return;
+    }
 
-    // Step 2: Query ClinicalTrials.gov API v2
-    const data = await fetchClinicalTrials(condition, zip, distance, geo);
+    // Step 2: Query ClinicalTrials.gov API v2 across pages up to 500 trials
+    const { studies, totalCount } = await fetchClinicalTrials(condition, distance, geo);
 
     // Step 3: Render results with calculated distances
-    renderResults(data, condition, zip, geo, distance);
+    renderResults(studies, totalCount, condition, zip, geo, distance);
   } catch (error) {
     console.error('Search error:', error);
     errorMessage.textContent = error.message || 'Unable to connect to ClinicalTrials.gov. Please try again in a few moments.';
@@ -198,53 +206,69 @@ async function lookupZipCoordinates(zip) {
 }
 
 /**
- * Queries the official ClinicalTrials.gov API v2
+ * Queries the official ClinicalTrials.gov API v2 across pages up to 500 trials
  */
-async function fetchClinicalTrials(condition, zip, distance, geo) {
+async function fetchClinicalTrials(condition, distance, geo) {
   const baseUrl = 'https://clinicaltrials.gov/api/v2/studies';
-  const params = new URLSearchParams();
+  const MAX_STUDIES = 500;
+  let allStudies = [];
+  let pageToken = null;
+  let totalCount = 0;
 
-  // Search by user condition
-  params.append('query.cond', condition);
-
-  // Filter only actively recruiting trials
-  params.append('filter.overallStatus', 'RECRUITING');
-
-  // Proximity filter: use geo distance if coordinates available, otherwise query.locn
-  if (geo && geo.lat && geo.lon) {
+  while (allStudies.length < MAX_STUDIES) {
+    const params = new URLSearchParams();
+    params.append('query.cond', condition);
+    params.append('filter.overallStatus', 'RECRUITING');
     params.append('filter.geo', `distance(${geo.lat},${geo.lon},${distance}mi)`);
-  } else {
-    params.append('query.locn', zip);
-  }
 
-  // Study limit and total count (fetch up to 100 to cover all nearby results)
-  params.append('pageSize', '100');
-  params.append('countTotal', 'true');
+    // Fetch up to 100 per request, capped at MAX_STUDIES
+    const fetchLimit = Math.min(100, MAX_STUDIES - allStudies.length);
+    params.append('pageSize', String(fetchLimit));
+    params.append('countTotal', 'true');
 
-  const url = `${baseUrl}?${params.toString()}`;
-
-  const response = await fetch(url, {
-    method: 'GET',
-    headers: {
-      'Accept': 'application/json'
+    if (pageToken) {
+      params.append('pageToken', pageToken);
     }
-  });
 
-  if (!response.ok) {
-    throw new Error(`The trials registry returned an error (status: ${response.status}). Please try again.`);
+    const url = `${baseUrl}?${params.toString()}`;
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`The trials registry returned an error (status: ${response.status}). Please try again.`);
+    }
+
+    const data = await response.json();
+    if (data.totalCount !== undefined) {
+      totalCount = data.totalCount;
+    }
+
+    const newStudies = data.studies || [];
+    allStudies.push(...newStudies);
+
+    if (data.nextPageToken && allStudies.length < MAX_STUDIES && newStudies.length > 0) {
+      loadingMessage.textContent = `Found ${allStudies.length} trials... loading more nearby...`;
+      pageToken = data.nextPageToken;
+    } else {
+      break;
+    }
   }
 
-  return await response.json();
+  return {
+    studies: allStudies,
+    totalCount: totalCount || allStudies.length
+  };
 }
 
 /**
  * Formats and displays study results on the screen
  */
-function renderResults(data, condition, zip, geo, distance) {
-  const studies = data.studies || [];
-  const totalCount = data.totalCount !== undefined ? data.totalCount : studies.length;
-
-  if (studies.length === 0) {
+function renderResults(studies, totalCount, condition, zip, geo, distance) {
+  if (!studies || studies.length === 0) {
     const locationLabel = geo?.placeName ? `${geo.placeName} (${zip})` : `zip code ${zip}`;
     emptyMessage.textContent = `We couldn't find any actively recruiting trials for "${condition}" near ${locationLabel}.`;
     showView('empty');
@@ -263,7 +287,13 @@ function renderResults(data, condition, zip, geo, distance) {
   // Update header text
   const locationLabel = geo?.placeName ? `near ${geo.placeName} (${zip})` : `near ${zip}`;
   resultsSummary.textContent = `Found ${totalCount} Recruiting ${totalCount === 1 ? 'Trial' : 'Trials'}`;
-  resultsSubtext.textContent = `Showing studies for "${condition}" ${locationLabel}`;
+  
+  // Show "Showing X of Y trials" if cut off
+  if (studies.length < totalCount) {
+    resultsSubtext.textContent = `Showing ${studies.length} of ${totalCount} trials for "${condition}" ${locationLabel}`;
+  } else {
+    resultsSubtext.textContent = `Showing studies for "${condition}" ${locationLabel}`;
+  }
 
   // Apply chosen sort ("nearest" or "relevance") and render cards
   applySortingAndRender();
@@ -368,7 +398,7 @@ function createTrialCard(study, index, locationInfo) {
     </div>
 
     <div class="card-footer">
-      <span class="results-subtext">Official study listing verified by NIH</span>
+      <span class="results-subtext">Source: ClinicalTrials.gov.</span>
       <a href="${officialUrl}" target="_blank" rel="noopener noreferrer" class="card-link-btn">
         <span>View Study Details</span>
         <span aria-hidden="true">↗</span>
@@ -482,6 +512,12 @@ function analyzeStudySites(locations, userGeo, searchRadius, searchZip) {
     let sitesWithinRadiusCount = 0;
 
     locations.forEach(loc => {
+      // Only count locations whose own status is RECRUITING. If a location has no status, include it.
+      const isEligibleSite = !loc.status || loc.status === 'RECRUITING';
+      if (!isEligibleSite) {
+        return;
+      }
+
       // ClinicalTrials.gov API v2 provides coordinates in loc.geoPoint
       const lat = loc.geoPoint?.lat ?? (typeof loc.latitude === 'number' ? loc.latitude : null);
       const lon = loc.geoPoint?.lon ?? (typeof loc.longitude === 'number' ? loc.longitude : null);
@@ -527,16 +563,24 @@ function analyzeStudySites(locations, userGeo, searchRadius, searchZip) {
         radiusCountText,
         nearestDistance: nearestSite.dist
       };
+    } else {
+      return {
+        nearestSiteText: 'No recruiting sites currently listed nearby',
+        facilityText: '',
+        radiusCountText: '',
+        nearestDistance: Infinity
+      };
     }
   }
 
   // Fallback: If GPS coordinates are not available, try matching zip code
-  const exactZipMatch = searchZip ? locations.find(loc => loc.zip && loc.zip.includes(searchZip)) : null;
-  const targetLoc = exactZipMatch || locations.find(loc => loc.status === 'RECRUITING') || locations[0];
+  const eligibleLocations = locations.filter(loc => !loc.status || loc.status === 'RECRUITING');
+  const targetLoc = (searchZip ? eligibleLocations.find(loc => loc.zip && loc.zip.includes(searchZip)) : null)
+    || eligibleLocations[0] || locations[0];
 
   const cityState = [targetLoc.city, targetLoc.state].filter(Boolean).join(', ');
   const fallbackText = cityState || targetLoc.country || 'Location on record';
-  const totalExtra = locations.length > 1 ? `(${locations.length} sites total)` : '';
+  const totalExtra = eligibleLocations.length > 1 ? `(${eligibleLocations.length} recruiting sites total)` : '';
 
   return {
     nearestSiteText: fallbackText,

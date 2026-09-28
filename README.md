@@ -32,7 +32,7 @@ However, the official government databases (such as ClinicalTrials.gov) were des
   - *"Phase 2"*, *"Phase 2/3"*, etc.
 - **"Conditions Studied" Clarity:** Displays the exact conditions recorded in the registry so users immediately understand why a study matched their search.
 - **Flexible Sorting:** Sort results by **Nearest first** (closest clinic to you) or **Best match** (relevance to your medical keywords).
-- **100% Private & Free:** No sign-up, no login, no tracking, and no search data saved.
+- **Free, no sign-up, nothing saved:** No account required, no tracking, and no search data stored.
 
 ---
 
@@ -69,7 +69,7 @@ To run the project on your computer:
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/trialfinder.git
+   git clone https://github.com/R-Shivaram/TrialFinder.git
    cd trialfinder
    ```
 2. Start any local web server. For example, using Python:
