@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Trials Finder - Find Recruiting Studies Near You</title>
+  <meta name="description" content="A simple, patient-friendly search tool to find actively recruiting clinical trials nearby using the official ClinicalTrials.gov API.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation / Brand Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">🩺</span>
+        <div class="logo-text">
+          <h1>Clinical Trials Finder</h1>
+          <p>Powered by the official U.S. ClinicalTrials.gov database</p>
+        </div>
+      </div>
+      <div class="privacy-badge">
+        <span class="badge-icon">🔒</span>
+        <span>No sign-up • Nothing saved.</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+    
+    <!-- Hero / Search Section -->
+    <section class="search-card">
+      <div class="search-intro">
+        <h2>Find Actively Recruiting Clinical Trials</h2>
+        <p>Search thousands of medical studies currently seeking participants in your area.</p>
+      </div>
+
+      <form id="search-form" class="search-form" novalidate>
+        <div class="form-grid">
+          
+          <!-- Condition Input -->
+          <div class="form-group">
+            <label for="condition-input">
+              Medical Condition or Disease
+              <span class="required">*</span>
+            </label>
+            <div class="input-wrapper">
+              <span class="input-icon">🔍</span>
+              <input 
+                type="text" 
+                id="condition-input" 
+                name="condition" 
+                placeholder="e.g. Asthma, Diabetes, Migraine, Arthritis" 
+                required 
+                autocomplete="off"
+              >
+            </div>
+            <span class="error-text" id="condition-error"></span>
+          </div>
+
+          <!-- Zip Code Input -->
+          <div class="form-group">
+            <label for="zip-input">
+              US Zip Code
+              <span class="required">*</span>
+            </label>
+            <div class="input-wrapper">
+              <span class="input-icon">📍</span>
+              <input 
+                type="text" 
+                id="zip-input" 
+                name="zip" 
+                placeholder="e.g. 90210" 
+                maxlength="5" 
+                pattern="[0-9]{5}"
+                required 
+                inputmode="numeric"
+              >
+            </div>
+            <span class="error-text" id="zip-error"></span>
+          </div>
+
+          <!-- Distance Radius Selector -->
+          <div class="form-group form-group-sm">
+            <label for="distance-select">Search Distance</label>
+            <div class="input-wrapper">
+              <select id="distance-select" name="distance">
+                <option value="25">Within 25 miles</option>
+                <option value="50" selected>Within 50 miles</option>
+                <option value="100">Within 100 miles</option>
+                <option value="200">Within 200 miles</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Search Action Button -->
+        <div class="form-actions">
+          <button type="submit" id="search-btn" class="primary-btn">
+            <span class="btn-text">Find Recruiting Trials</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="quick-tags">
+        <span class="quick-tags-label">Popular searches:</span>
+        <button type="button" class="tag-chip" data-condition="Asthma" data-zip="90210">Asthma</button>
+        <button type="button" class="tag-chip" data-condition="Diabetes" data-zip="10001">Diabetes</button>
+        <button type="button" class="tag-chip" data-condition="Migraine" data-zip="60601">Migraine</button>
+        <button type="button" class="tag-chip" data-condition="Arthritis" data-zip="30301">Arthritis</button>
+        <button type="button" class="tag-chip" data-condition="Hypertension" data-zip="75201">Hypertension</button>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-area" class="results-area">
+      
+      <!-- Welcome State (Default) -->
+      <div id="welcome-state" class="state-card">
+        <div class="state-icon">🔬</div>
+        <h3>Ready to Explore Clinical Studies?</h3>
+        <p>Enter a condition and your US zip code above, then click <strong>Find Recruiting Trials</strong>. We only show trials currently accepting participants.</p>
+        <div class="info-checklist">
+          <div class="checklist-item">
+            <span class="check-icon">✓</span>
+            <span>Always shows actively recruiting trials</span>
+          </div>
+          <div class="checklist-item">
+            <span class="check-icon">✓</span>
+            <span>Includes study phase, nearby clinic location, and summary</span>
+          </div>
+          <div class="checklist-item">
+            <span class="check-icon">✓</span>
+            <span>Direct links to official National Institutes of Health (NIH) records</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div id="loading-state" class="state-card hidden" aria-live="polite">
+        <div class="spinner"></div>
+        <h3>Searching Recruiting Trials...</h3>
+        <p id="loading-message">Querying official ClinicalTrials.gov records nearby...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="state-card state-error hidden" role="alert">
+        <div class="state-icon">⚠️</div>
+        <h3 id="error-title">Unable to Complete Search</h3>
+        <p id="error-message">Something went wrong while connecting to the trials registry. Please check your internet connection and try again.</p>
+        <button type="button" id="retry-btn" class="secondary-btn">Try Again</button>
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="state-card hidden">
+        <div class="state-icon">🔎</div>
+        <h3>No Recruiting Trials Found</h3>
+        <p id="empty-message">We couldn't find any actively recruiting trials matching your search in this area.</p>
+        <ul class="empty-tips">
+          <li>Try increasing your <strong>Search Distance</strong> (e.g. to 100 miles).</li>
+          <li>Try a broader condition keyword (e.g. "Diabetes" instead of "Type 2 Diabetes Mellitus").</li>
+          <li>Verify your 5-digit zip code.</li>
+        </ul>
+      </div>
+
+      <!-- Results List State -->
+      <div id="results-state" class="hidden">
+        <div class="results-header">
+          <div class="results-title-group">
+            <h3 id="results-summary">Found Trials</h3>
+            <p id="results-subtext" class="results-subtext"></p>
+          </div>
+          <div class="results-actions">
+            <div class="sort-control">
+              <label for="sort-select">Sort by:</label>
+              <select id="sort-select" class="sort-select">
+                <option value="nearest" selected>Nearest first</option>
+                <option value="relevance">Best match</option>
+              </select>
+            </div>
+            <div class="status-legend">
+              <span class="badge badge-recruiting">● Actively Recruiting</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="trials-list" class="trials-list">
+          <!-- Study cards will be rendered here by JavaScript -->
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Patient Medical Disclaimer Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="disclaimer-box">
+        <strong>⚠️ Medical Disclaimer:</strong>
+        <p>This tool is for informational purposes only and does not provide medical advice. Talk with your healthcare provider before joining a clinical trial.</p>
+      </div>
+      <p class="copyright">&copy; Clinical Trials Finder • Open Access Health Information</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
