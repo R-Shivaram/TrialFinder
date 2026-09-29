@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string" },
+          "original_text": { "type": "string" },
+          "criterion_type": { "type": "string", "enum": ["inclusion", "exclusion"] },
+          "counts_against": { "type": "string", "enum": ["yes", "no"] },
+          "sensitive_topic": { "type": "boolean" }
+        },
+        "required": ["question", "original_text", "criterion_type", "counts_against", "sensitive_topic"],
+        "additionalProperties": false
+      }
+    },
+    "needs_human_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_text": { "type": "string" },
+          "problem": { "type": "string" }
+        },
+        "required": ["original_text", "problem"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["questions", "needs_human_review"],
+  "additionalProperties": false
+}
