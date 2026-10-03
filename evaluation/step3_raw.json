@@ -1,0 +1,659 @@
+{
+  "NCT05138432|claude-opus-5": {
+    "nct_id": "NCT05138432",
+    "model": "claude-opus-5",
+    "seconds": 6.1,
+    "input_tokens": 3398,
+    "output_tokens": 397,
+    "cost_usd": 0.0269,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Was your last hemoglobin A1c (a blood test that shows your average blood sugar over about 3 months) 6.5 or higher?",
+        "original_text": "Hemoglobin A1c greater than or equal to 6.5",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you get your diabetes care at the Rady Children's Hospital Diabetes Clinic?",
+        "original_text": "Receiving care at the Rady Children's Hospital Diabetes Clinic",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is another immediate family member who lives in your home already taking part in this study?",
+        "original_text": "Another immediate family member living in the same household who is already recruited into the study",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": []
+  },
+  "NCT07225218|claude-opus-5": {
+    "nct_id": "NCT07225218",
+    "model": "claude-opus-5",
+    "seconds": 9.3,
+    "input_tokens": 3412,
+    "output_tokens": 899,
+    "cost_usd": 0.0395,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Are you currently enrolled as an undergraduate student at UCLA, either full time or part time?",
+        "original_text": "Participants who are currently enrolled (either full time or part time) as an undergraduate at UCLA and meet criteria for the T-UP Wellness Program (students who have a BMI of ≥25 (≥23 for those self- identifying as Asian) and either documented prediabetes or identified as high-risk on a CDC questionnaire).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your BMI (body mass index, a number based on your height and weight) 25 or higher? If you identify as Asian, is your BMI 23 or higher?",
+        "original_text": "Participants who are currently enrolled (either full time or part time) as an undergraduate at UCLA and meet criteria for the T-UP Wellness Program (students who have a BMI of ≥25 (≥23 for those self- identifying as Asian) and either documented prediabetes or identified as high-risk on a CDC questionnaire).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have prediabetes (blood sugar higher than normal but not high enough to be diabetes) noted in your medical records, or were you found to be high-risk on a CDC (Centers for Disease Control and Prevention) risk questionnaire?",
+        "original_text": "Participants who are currently enrolled (either full time or part time) as an undergraduate at UCLA and meet criteria for the T-UP Wellness Program (students who have a BMI of ≥25 (≥23 for those self- identifying as Asian) and either documented prediabetes or identified as high-risk on a CDC questionnaire).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": []
+  },
+  "NCT05208164|claude-opus-5": {
+    "nct_id": "NCT05208164",
+    "model": "claude-opus-5",
+    "seconds": 15.5,
+    "input_tokens": 3510,
+    "output_tokens": 1416,
+    "cost_usd": 0.0529,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Do you identify as African American or Black?",
+        "original_text": "Self-identifies as African American or Black",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a valid home address in the greater Chicago area?",
+        "original_text": "Valid address in greater Chicagoland area",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a mobile phone with unlimited text messaging?",
+        "original_text": "Mobile phone with unlimited text-messaging",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you available to take part in a mindfulness class (a class that teaches calm, focused attention), either in person or online?",
+        "original_text": "Availability to participate in mindfulness class either in-person or online",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have obstructive sleep apnea (brief stops in breathing during sleep) that is not being treated?",
+        "original_text": "Untreated obstructive sleep apnea (OSA)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have severe insomnia (great trouble falling or staying asleep), narcolepsy (falling asleep suddenly during the day), or a REM sleep related disorder (a problem with the dreaming stage of sleep)?",
+        "original_text": "Severe insomnia, narcolepsy, or REM sleep related disorder",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have problems with alcohol or drug use?",
+        "original_text": "Alcohol or drug abuse",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Is your ability to speak and understand English limited?",
+        "original_text": "Limited English proficiency",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you currently have a mindfulness practice (regularly doing mindfulness or meditation)?",
+        "original_text": "Currently engaging in mindfulness practice",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": [
+      {
+        "original_text": "Diagnosis of type 2 diabetes",
+        "problem": "The criteria require a diagnosis of type 2 diabetes, but the structured listing says the study accepts healthy volunteers. Someone should check which is correct."
+      }
+    ]
+  },
+  "NCT07032844|claude-opus-5": {
+    "nct_id": "NCT07032844",
+    "model": "claude-opus-5",
+    "seconds": 16.0,
+    "input_tokens": 3640,
+    "output_tokens": 1539,
+    "cost_usd": 0.0567,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Was your hemoglobin A1c (a blood test that shows your average blood sugar over the past 3 months) 7% or higher on a test done within the last 3 months?",
+        "original_text": "Hemoglobin A1c ≥7% within 3 months of screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a physical disability?",
+        "original_text": "Physical Disability",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Besides diabetes, do you have at least one of these health problems: high blood pressure, heart failure (heart cannot pump well), coronary artery disease (blocked heart arteries), high cholesterol, stroke, arthritis (joint pain and swelling), asthma, cancer, chronic kidney disease stages 1 to 4 (long-term kidney damage that is not end-stage), COPD (long-term lung disease that makes breathing hard), osteoporosis (thin, weak bones), multiple sclerosis (a nerve disease), or Parkinson's disease (a brain disease that affects movement)?",
+        "original_text": "Must have at least 1 additional chronic conditions from the list below Hypertension Congestive Heart Failure Coronary Artery Disease Hyperlipidemia Stroke Arthritis Asthma Cancer Chronic Kidney Disease (Stages 1-4) COPD Osteoporosis Multiple Sclerosis Parkinsons",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you currently pregnant?",
+        "original_text": "Currently pregnant",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you have major vision loss that stops you from using a phone or tablet?",
+        "original_text": "Significant vision loss preventing use of phone/tablet for interventions",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the last 30 days, have you taken part in remote patient monitoring (your health data sent to your care team from home) or digital health coaching for your type 2 diabetes?",
+        "original_text": "Received Remote Patient Monitoring or Digital Health Coaching for T2DM management within 30 days of enrollment",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have end-stage kidney disease and get dialysis (a treatment that cleans your blood when your kidneys cannot)?",
+        "original_text": "End-stage kidney disease (on dialysis)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you speak English?",
+        "original_text": "Non-english speakers",
+        "criterion_type": "exclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": []
+  },
+  "NCT06028503|claude-opus-5": {
+    "nct_id": "NCT06028503",
+    "model": "claude-opus-5",
+    "seconds": 12.5,
+    "input_tokens": 3622,
+    "output_tokens": 996,
+    "cost_usd": 0.043,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Is your HbA1c (a blood test showing average blood sugar over about 3 months) 6.0 or higher?",
+        "original_text": "Diagnosed diabetes (self-reported) and with an HbA1c ≥ 6.0 (using point-of-care device)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have reliable access to your own smartphone?",
+        "original_text": "reliable access to a personal smartphone device 6) zip code is associated with a rural area.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your home zip code in a rural area?",
+        "original_text": "reliable access to a personal smartphone device 6) zip code is associated with a rural area.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you able to speak English?",
+        "original_text": "able to speak English",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have a pacemaker (a small device placed in the chest to help control the heartbeat) or another implanted electrical medical device?",
+        "original_text": "has a pacemaker or other implanted electrical medical device",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant?",
+        "original_text": "Pregnant (management of diabetes while pregnant may require additional medical oversight).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you drink a heavy amount of alcohol, or use a heavy amount of other substances (such as drugs)?",
+        "original_text": "uses a heavy amount of alcohol or other substances",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ],
+    "needs_human_review": []
+  },
+  "NCT07662135|claude-opus-5": {
+    "nct_id": "NCT07662135",
+    "model": "claude-opus-5",
+    "seconds": 20.5,
+    "input_tokens": 3875,
+    "output_tokens": 1983,
+    "cost_usd": 0.0689,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Were you diagnosed with type 2 diabetes at least 90 days (about 3 months) ago?",
+        "original_text": "Diagnosed with Type 2 Diabetes Mellitus for at least 90 days prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has a doctor told you that your kidneys do not work as well as they should?",
+        "original_text": "Impaired renal function",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your body mass index (BMI, a number based on your height and weight) 23 kg/m2 or higher?",
+        "original_text": "Body mass index (BMI) of ≥ 23 kg/m2 at screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your body weight stayed about the same for the last 90 days (about 3 months)?",
+        "original_text": "Stable body weight (self-reported or documented) for 90 days prior to screening",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes, another type of diabetes caused by a different illness or present from birth, or have you ever had ketoacidosis (a dangerous build-up of acids in the blood) or a hyperosmolar coma (a coma caused by very high blood sugar)?",
+        "original_text": "Type 1 Diabetes, secondary forms of diabetes (including congenital forms), or history of ketoacidosis or hyperosmolar coma",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the last 180 days (about 6 months), have you had more than one episode of severe low blood sugar (when you needed someone else's help), or do you have trouble feeling or noticing the warning signs of low blood sugar?",
+        "original_text": "Have had more than one episode of severe hypoglycemia within 180 days prior to screening or has a history of hypoglycemia unawareness or poor recognition of hypoglycemic symptoms",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you ever had pancreatitis (swelling of the pancreas), either a sudden attack or a long-lasting form?",
+        "original_text": "History of acute or chronic pancreatitis",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you or a family member ever had medullary thyroid cancer (a rare cancer of the thyroid gland) or multiple endocrine neoplasia type 2 (a rare inherited condition that causes tumors in hormone glands)?",
+        "original_text": "History/family history of medullary thyroid cancer or multiple endocrine neoplasia type 2",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": [
+      {
+        "original_text": "HbA1c value:\n\n  1. On stable dose of SGLT2i ≥ 7.0 % to ≤ 10.5% (53 to 91.3 mmol/mol)\n  2. SGLT2i-naive ≥ 7.5% to ≤ 10.5% (58 to 91.3 mmol/mol)",
+        "problem": "The required HbA1c range depends on whether the patient takes a stable dose of an SGLT2 inhibitor (7.0-10.5%) or has never taken one (7.5-10.5%). A single patient question cannot cover both ranges without risking a wrong exclusion; someone should decide how to split or word this."
+      }
+    ]
+  },
+  "NCT07095543|claude-opus-5": {
+    "nct_id": "NCT07095543",
+    "model": "claude-opus-5",
+    "seconds": 14.4,
+    "input_tokens": 3836,
+    "output_tokens": 1514,
+    "cost_usd": 0.057,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Is your BMI (body mass index, a measure of weight compared to height) 25 or more? If you are of Asian origin, is it 23 or more?",
+        "original_text": "BMI of 25 or more (23 or more in persons of Asian origin).",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you use, or expect to use, any weight loss medicine during the study, such as a GLP-1 receptor agonist or a combined GLP-1/GIP agonist (injectable or oral drugs used for weight loss or diabetes, like semaglutide or tirzepatide)?",
+        "original_text": "Current or expected use of any weight loss medication during the study period, including but not limited to, glucagon-like peptide-1 (GLP-1) receptor agonists and combination GLP-1 receptor/glucose-dependent insulinotropic polypeptide (GIP) agonists.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the 12 months before the study, have you used any weight loss medicine, such as a GLP-1 receptor agonist or a combined GLP-1/GIP agonist (injectable or oral drugs used for weight loss or diabetes, like semaglutide or tirzepatide)?",
+        "original_text": "Use of any weight loss medication within the 12 months preceding the study period, including but not limited to, glucagon-like peptide-1 (GLP-1) receptor agonists and combination GLP-1 receptor/glucose-dependent insulinotropic polypeptide (GIP) agonists.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you weigh more than 182 kg (about 401 pounds)?",
+        "original_text": "Body weight greater than 182 kg.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant, or do you plan to become pregnant during the study?",
+        "original_text": "Pregnancy or intention to become pregnant during the study period, as verified by self-report.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you currently have a diagnosis of an eating disorder (such as anorexia, bulimia, or binge eating disorder)?",
+        "original_text": "Current diagnosis of eating disorder.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you able and willing to travel to Washington, DC for a DXA scan (a body scan that measures fat, muscle, and bone) before and after the program?",
+        "original_text": "Able and willing to travel to Washington DC for a dual-energy х-rау absorptiometry (DXA) scans before and after the program.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you plan to follow another weight loss method during the study?",
+        "original_text": "Intention to follow another weight loss method during the study period.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": [
+      {
+        "original_text": "Age 19 or older in Nebraska and Alabama. Age 21 or older in Puerto Rico. Age 18 or older in all other states.",
+        "problem": "The criteria set different minimum ages depending on where the person lives (19 in Nebraska and Alabama, 21 in Puerto Rico), but the listing's minimum age is 18 years. Someone needs to check which age limit applies."
+      }
+    ]
+  },
+  "NCT06546085|claude-opus-5": {
+    "nct_id": "NCT06546085",
+    "model": "claude-opus-5",
+    "seconds": 19.2,
+    "input_tokens": 4273,
+    "output_tokens": 1937,
+    "cost_usd": 0.0698,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Have you been diagnosed with type 1 diabetes (a form of diabetes where the body makes little or no insulin, usually starting in childhood)?",
+        "original_text": "Not diagnosed with Type 1 diabetes.",
+        "criterion_type": "inclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you need insulin shots to treat your diabetes?",
+        "original_text": "Evidence of type 1 diabetes and diabetics requiring insulin therapy.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your body mass index (BMI, a number based on your height and weight) between 20 and 45?",
+        "original_text": "Has a body mass index of 20-24.99 or 25.0-45 kg/m2.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 6 months, has your weight changed by 2 kg (about 4.5 pounds) or more?",
+        "original_text": "Participants who have not been weight stable (≥2 kg weight change in past 6 months)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 6 months, have you been doing 150 minutes or more of moderate or high intensity exercise each week?",
+        "original_text": "Participants who have been recently active in past 6 months via health screening questions (≥150 min of moderate/high intensity exercise)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your most recent HbA1c (a blood test that shows your average blood sugar over about 3 months) 10.0% or higher?",
+        "original_text": "T2D with HbA1c ≥10.0%",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you smoke, or did you quit smoking within the past 2 years?",
+        "original_text": "Participants who are smokers or who have quit smoking ≤2 years ago",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Are you pregnant or breastfeeding?",
+        "original_text": "Pregnant (as evidenced by positive pregnancy test) or nursing women",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you have a known allergy to perflutren (the active ingredient in the imaging dye Definity)?",
+        "original_text": "Known hypersensitivity to perflutren (contained in Definity).",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": [
+      {
+        "original_text": "Prescribed metformin, GLP-1 agonists (oral/injectable), TZDs, DPP-IV inhibitors, Acarbose, SGLT-2 inhibitors ≥6 year.",
+        "problem": "This inclusion criterion requires being prescribed these diabetes medicines for 6 years or more, but the exclusion criterion \"Participants prescribed metformin, GLP-1 agonists (oral/injectable), TZDs, DPP-IV inhibitors, Acarbose, SGLT-2 inhibitors within 6 year.\" appears to rule out the same people. Someone needs to clarify the intended direction and time period."
+      },
+      {
+        "original_text": "Has a body mass index of 20-24.99 or 25.0-45 kg/m2.",
+        "problem": "The inclusion criterion sets a lower BMI limit of 20, but the exclusion criterion rules out BMI of 18 or less, so it is unclear whether people with a BMI between 18 and 20 can join."
+      }
+    ]
+  },
+  "NCT07340320|claude-opus-5": {
+    "nct_id": "NCT07340320",
+    "model": "claude-opus-5",
+    "seconds": 11.2,
+    "input_tokens": 4923,
+    "output_tokens": 1187,
+    "cost_usd": 0.0543,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Have you had type 2 diabetes for at least 6 months?",
+        "original_text": "Diagnosis of type 2 diabetes for at least 6 months.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Was your most recent HbA1c (a blood test that shows your average blood sugar over about 3 months) between 7.0% and 10.5%?",
+        "original_text": "HbA1c between 7.0% and 10.5%.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Is your body mass index (BMI, a number based on your height and weight) between 23 and 50 kg/m²?",
+        "original_text": "Body mass index (BMI) between 23 and 50 kg/m².",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Has your body weight stayed about the same for the past 3 months?",
+        "original_text": "Body weight stable for the past 3 months before joining.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you been taking metformin (a common diabetes pill) at 1000 mg a day or more, at the same dose, for at least 3 months?",
+        "original_text": "Stable dose of metformin (≥1000 mg/day), with or without SGLT2i, for ≥3 months.",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 6 months, have you used a GLP-1 receptor agonist (a diabetes or weight medicine such as semaglutide, dulaglutide, or liraglutide)?",
+        "original_text": "Use of any GLP-1 receptor agonist within the past 6 months, or any prior exposure to CX11.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 12 months, have you used insulin to control your blood sugar?",
+        "original_text": "Use of insulin to control blood sugar within the past 12 months.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have type 1 diabetes, or have you ever had diabetic ketoacidosis (a serious problem where the blood builds up acids called ketones)?",
+        "original_text": "Type 1 diabetes or a history of diabetic ketoacidosis.",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      }
+    ],
+    "needs_human_review": []
+  },
+  "NCT07778524|claude-opus-5": {
+    "nct_id": "NCT07778524",
+    "model": "claude-opus-5",
+    "seconds": 32.8,
+    "input_tokens": 6034,
+    "output_tokens": 3260,
+    "cost_usd": 0.1117,
+    "stop_reason": "end_turn",
+    "questions": [
+      {
+        "question": "Is your body mass index (BMI, a measure of weight compared to height) between 18 and 45 — or between 18 and 42 if you are of Asian ancestry?",
+        "original_text": "Body mass index of 18-45 kg/m2 (or 18-42 kg/m2 for those of Asian ancestry)",
+        "criterion_type": "inclusion",
+        "counts_against": "no",
+        "sensitive_topic": false
+      },
+      {
+        "question": "In the past 3 months, has your weight changed by 5% or more of your usual weight?",
+        "original_text": "Documented weight change of ≥ 5.0% of baseline within the previous 3 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had gestational diabetes (diabetes during pregnancy) in the past 5 years?",
+        "original_text": "History of gestational diabetes mellitus within the previous 5 years",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you currently pregnant?",
+        "original_text": "Women currently pregnant",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Are you currently breastfeeding?",
+        "original_text": "Women currently breastfeeding",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      },
+      {
+        "question": "Do you have a heart or blood vessel disease? (High blood pressure alone, without complications, does not count.)",
+        "original_text": "Cardiovascular diseases (N.B. uncomplicated hypertension is not exclusionary)",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you have advanced or severe liver disease (serious damage or scarring of the liver)?",
+        "original_text": "Advanced or severe liver disease, including but not limited to:",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Have you had gastric bypass (Roux-en-Y) or biliopancreatic diversion weight-loss surgery at any time, or a lap band or sleeve gastrectomy (stomach-shrinking surgery) in the past 6 months?",
+        "original_text": "History of certain weight-loss (bariatric) surgery, including:\n\n  * Roux-en-Y gastric bypass\n  * Biliopancreatic diversion\n  * Restrictive procedures (lap band, sleeve gastrectomy) performed within the past 6 months",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": false
+      },
+      {
+        "question": "Do you drink more than 14 standard alcoholic drinks per week (if you are male) or more than 7 standard alcoholic drinks per week (if you are female)?",
+        "original_text": "Clinical concern for alcohol overuse based on chart review and/or by recruit's report of more than 14 standard drinks per week for males or more than 7 standard drinks per week for females",
+        "criterion_type": "exclusion",
+        "counts_against": "yes",
+        "sensitive_topic": true
+      }
+    ],
+    "needs_human_review": [
+      {
+        "original_text": "History of having met any of the American Diabetes Association's definitions of diabetes mellitus (i.e., overt diabetes):",
+        "problem": "This criterion, and the related criterion \"Laboratory evidence of diabetes mellitus:\", rule out anyone with diabetes, but the trial's listed conditions include Type 2 Diabetes. Someone needs to check whether people with type 2 diabetes can take part at all."
+      },
+      {
+        "original_text": "Use of most antidiabetic medications within the 90 days prior to screening\n\n  * Exceptions: thiazolidinediones, sulfonylureas, meglitinides, DPP4 inhibitors, GLP-1 receptor agonists, SGLT2 inhibitors, amylin mimetics, acarbose, insulin\n  * Metformin is acceptable provided that recruits meet all of the inclusion criteria at screening",
+        "problem": "The listed \"exceptions\" are themselves antidiabetic medicines, and a later criterion says antidiabetic drugs except metformin within 30 days are excluded. It is unclear which medicines and which time period actually rule a person out."
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+﻿trial_id,model,criteria_characters,seconds,input_tokens,output_tokens,cost_usd,stop_reason,listing_questions,ai_questions_returned,ai_questions_kept,ai_questions_dropped,total_questions,needs_review_items
+NCT05138432,claude-opus-5,318,6.1,3398,397,0.0269,end_turn,2,3,3,0,5,0
+NCT07225218,claude-opus-5,515,9.3,3412,899,0.0395,end_turn,1,3,3,0,4,0
+NCT05208164,claude-opus-5,715,15.5,3510,1416,0.0529,end_turn,1,9,9,0,10,1
+NCT07032844,claude-opus-5,851,16.0,3640,1539,0.0567,end_turn,2,8,8,0,10,0
+NCT06028503,claude-opus-5,1050,12.5,3622,996,0.043,end_turn,2,7,7,0,9,0
+NCT07662135,claude-opus-5,1271,20.5,3875,1983,0.0689,end_turn,2,8,8,0,10,1
+NCT07095543,claude-opus-5,1574,14.4,3836,1514,0.057,end_turn,2,8,8,0,10,1
+NCT06546085,claude-opus-5,2328,19.2,4273,1937,0.0698,end_turn,1,9,9,0,10,2
+NCT07340320,claude-opus-5,3943,11.2,4923,1187,0.0543,end_turn,2,8,8,0,10,0
+NCT07778524,claude-opus-5,6926,32.8,6034,3260,0.1117,end_turn,1,9,9,0,10,2

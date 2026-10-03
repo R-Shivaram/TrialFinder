@@ -39,6 +39,7 @@ from step1 import (  # noqa: E402
 )
 
 ROOT = EVAL_DIR.parent
+NAME = "step2"  # prefix for every output file; step3.py changes it
 TRIALS_FILE = EVAL_DIR / "step2_trials.json"
 RAW_FILE = EVAL_DIR / "step2_raw.json"
 PROMPT = (ROOT / "prompts" / "eligibility_questions_v2.md").read_text()
@@ -197,7 +198,7 @@ def run_models():
             print(f"{key}: {seconds:.0f}s, ${cost:.3f} (total ${spent:.2f}), stop={response.stop_reason}")
 
     save_raw(raw)
-    print(f"Done. Total spent on step 2: ${spent:.2f}")
+    print(f"Done. Total spent on {NAME}: ${spent:.2f}")
 
 
 def save_raw(raw):
@@ -313,10 +314,10 @@ def build_reports():
             })
 
     sort_key = lambda r: (order.index(r["trial_id"]), r["model"] != LISTING, r["model"])
-    write_csv(EVAL_DIR / "step2.csv", sorted(kept_rows, key=sort_key))
-    write_csv(EVAL_DIR / "step2_needs_review.csv", sorted(review_rows, key=sort_key))
-    write_csv(EVAL_DIR / "step2_dropped.csv", sorted(dropped_rows, key=sort_key))
-    write_csv(EVAL_DIR / "step2_runs.csv", sorted(run_rows, key=sort_key))
+    write_csv(EVAL_DIR / f"{NAME}.csv", sorted(kept_rows, key=sort_key))
+    write_csv(EVAL_DIR / f"{NAME}_needs_review.csv", sorted(review_rows, key=sort_key))
+    write_csv(EVAL_DIR / f"{NAME}_dropped.csv", sorted(dropped_rows, key=sort_key))
+    write_csv(EVAL_DIR / f"{NAME}_runs.csv", sorted(run_rows, key=sort_key))
     summarize(kept_rows, review_rows, dropped_rows, run_rows)
 
 

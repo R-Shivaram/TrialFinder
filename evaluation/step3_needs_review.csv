@@ -1,0 +1,14 @@
+﻿trial_id,model,original_text,problem,quote_check,agree it needs review (Y/N),notes
+NCT05208164,claude-opus-5,Diagnosis of type 2 diabetes,"The criteria require a diagnosis of type 2 diabetes, but the structured listing says the study accepts healthy volunteers. Someone should check which is correct.",ok,,
+NCT07662135,claude-opus-5,"HbA1c value:
+
+  1. On stable dose of SGLT2i ≥ 7.0 % to ≤ 10.5% (53 to 91.3 mmol/mol)
+  2. SGLT2i-naive ≥ 7.5% to ≤ 10.5% (58 to 91.3 mmol/mol)",The required HbA1c range depends on whether the patient takes a stable dose of an SGLT2 inhibitor (7.0-10.5%) or has never taken one (7.5-10.5%). A single patient question cannot cover both ranges without risking a wrong exclusion; someone should decide how to split or word this.,ok,,
+NCT07095543,claude-opus-5,Age 19 or older in Nebraska and Alabama. Age 21 or older in Puerto Rico. Age 18 or older in all other states.,"The criteria set different minimum ages depending on where the person lives (19 in Nebraska and Alabama, 21 in Puerto Rico), but the listing's minimum age is 18 years. Someone needs to check which age limit applies.",ok,,
+NCT06546085,claude-opus-5,"Prescribed metformin, GLP-1 agonists (oral/injectable), TZDs, DPP-IV inhibitors, Acarbose, SGLT-2 inhibitors ≥6 year.","This inclusion criterion requires being prescribed these diabetes medicines for 6 years or more, but the exclusion criterion ""Participants prescribed metformin, GLP-1 agonists (oral/injectable), TZDs, DPP-IV inhibitors, Acarbose, SGLT-2 inhibitors within 6 year."" appears to rule out the same people. Someone needs to clarify the intended direction and time period.",ok,,
+NCT06546085,claude-opus-5,Has a body mass index of 20-24.99 or 25.0-45 kg/m2.,"The inclusion criterion sets a lower BMI limit of 20, but the exclusion criterion rules out BMI of 18 or less, so it is unclear whether people with a BMI between 18 and 20 can join.",ok,,
+NCT07778524,claude-opus-5,"History of having met any of the American Diabetes Association's definitions of diabetes mellitus (i.e., overt diabetes):","This criterion, and the related criterion ""Laboratory evidence of diabetes mellitus:"", rule out anyone with diabetes, but the trial's listed conditions include Type 2 Diabetes. Someone needs to check whether people with type 2 diabetes can take part at all.",ok,,
+NCT07778524,claude-opus-5,"Use of most antidiabetic medications within the 90 days prior to screening
+
+  * Exceptions: thiazolidinediones, sulfonylureas, meglitinides, DPP4 inhibitors, GLP-1 receptor agonists, SGLT2 inhibitors, amylin mimetics, acarbose, insulin
+  * Metformin is acceptable provided that recruits meet all of the inclusion criteria at screening","The listed ""exceptions"" are themselves antidiabetic medicines, and a later criterion says antidiabetic drugs except metformin within 30 days are excluded. It is unclear which medicines and which time period actually rule a person out.",ok,,
