@@ -1,0 +1,10 @@
+[
+  {
+    "plan_id": "cc1e4a69",
+    "batch_id": "msgbatch_01CrDjQNwz84hhjiSUC5BKVB",
+    "date": "2026-10-02",
+    "trials": 16,
+    "worst_case_usd": 1.81,
+    "actual_usd": 0.5664
+  }
+]

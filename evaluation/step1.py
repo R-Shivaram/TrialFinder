@@ -203,8 +203,8 @@ def normalize(text):
 
 
 def unescape(text):
-    """Remove the backslashes ClinicalTrials.gov stores before symbols like < > ( ) *."""
-    return re.sub(r"\\([\\`*_{}\[\]()#+\-.!<>|~])", r"\1", text)
+    """Remove the backslashes ClinicalTrials.gov stores before symbols like < > ( ) * ^."""
+    return re.sub(r"\\([!-/:-@\[-`{-~])", r"\1", text)  # any ASCII punctuation
 
 
 def check_quote(quote, criteria):

@@ -397,6 +397,8 @@ function createTrialCard(study, index, locationInfo) {
       ${isLongSummary ? `<button type="button" class="toggle-read-more" data-index="${index}">Read more</button>` : ''}
     </div>
 
+    <div class="screener-slot"></div>
+
     <div class="card-footer">
       <span class="results-subtext">Source: ClinicalTrials.gov.</span>
       <a href="${officialUrl}" target="_blank" rel="noopener noreferrer" class="card-link-btn">
@@ -423,6 +425,9 @@ function createTrialCard(study, index, locationInfo) {
       }
     });
   }
+
+  // Eligibility checklist (see screener.js)
+  Screener.attach(card.querySelector('.screener-slot'), study, lastSearch.condition);
 
   return card;
 }

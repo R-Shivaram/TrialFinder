@@ -688,6 +688,217 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+   Eligibility Checklist (screener.js)
+   -------------------------------------------------------------------------- */
+.screener-slot:empty {
+  display: none;
+}
+
+.screener-slot {
+  margin-bottom: 1.25rem;
+}
+
+.screener-note {
+  background-color: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.screener-note a,
+.screener-disclaimer a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.screener-toggle {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary-hover);
+  background-color: var(--primary-light);
+  border: 1px solid var(--primary-glow);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.screener-toggle::after {
+  content: " ▾";
+}
+
+.screener-toggle[aria-expanded="true"]::after {
+  content: " ▴";
+}
+
+.screener-toggle:hover,
+.screener-toggle:focus-visible {
+  border-color: var(--primary);
+}
+
+.screener-panel {
+  border: 1px solid var(--border-light);
+  border-top: none;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  padding: 1rem;
+}
+
+.screener-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.screener-questions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.screener-question fieldset,
+.screener-role {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+}
+
+.screener-role {
+  margin-bottom: 1rem;
+  background-color: var(--bg-subtle);
+}
+
+.screener-question legend,
+.screener-role legend {
+  font-weight: 600;
+  padding: 0 0.25rem;
+}
+
+.screener-source {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin: 0.35rem 0 0.5rem;
+}
+
+.screener-source-ai {
+  background-color: var(--accent-phase-bg);
+  color: var(--accent-phase);
+}
+
+.screener-source-listing {
+  background-color: var(--accent-recruiting-bg);
+  color: var(--accent-recruiting);
+}
+
+.screener-original {
+  background-color: var(--bg-subtle);
+  border-left: 3px solid var(--border-light);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  margin-bottom: 0.6rem;
+}
+
+.screener-original-label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: normal;
+}
+
+.screener-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.screener-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.screener-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  min-height: 2rem;
+}
+
+.screener-option input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--primary);
+}
+
+.screener-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.screener-btn {
+  font-size: 0.95rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.screener-result:not(:empty) {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+.screener-result h5 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.screener-result ul {
+  margin: 0.25rem 0 0.5rem 1.25rem;
+}
+
+.screener-result p {
+  font-size: 0.9rem;
+}
+
+.screener-result-possible {
+  background-color: var(--accent-recruiting-bg);
+  border-color: var(--accent-recruiting);
+}
+
+.screener-result-no {
+  background-color: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.screener-result-unclear {
+  background-color: #fffbeb;
+  border-color: #fcd34d;
+}
+
+.screener-result-disclaimer,
+.screener-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.screener-result-disclaimer {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
    Footer & Medical Disclaimer
    -------------------------------------------------------------------------- */
 .app-footer {

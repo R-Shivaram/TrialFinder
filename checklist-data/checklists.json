@@ -1,0 +1,599 @@
+{
+ "about": "Pre-made eligibility checklists for TrialFinder. Made by tools/generate_checklists.py.",
+ "made_on": "2026-10-02",
+ "trials": {
+  "NCT05317585": {
+   "last_update": "2026-08-03",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you 18 years old or older?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 18 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Is your sex female?",
+     "text_for_parent": null,
+     "original_text": "Sexes Eligible for Study: Female",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Do you have type 2 diabetes (a long-term condition where your body has trouble using insulin, so your blood sugar runs high)?",
+     "text_for_parent": null,
+     "original_text": "Accepts Healthy Volunteers: No · Conditions: Type 2 Diabetes Treated With Insulin, Pregnancy, High Risk",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Are you pregnant with one baby and 14 weeks pregnant or less at your first pregnancy visit?",
+     "text_for_parent": null,
+     "original_text": "2) singleton gestation less than or equal to 14 weeks at initial obstetric visit",
+     "counts_against": "no",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Are you getting your pregnancy care at UMASS Memorial Health Care (UMMHC) and do you plan to give birth there?",
+     "text_for_parent": null,
+     "original_text": "4) receiving prenatal care at UMASS Memorial Health Care (UMMHC) and plans to deliver at UMMHC",
+     "counts_against": "no",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Has a doctor told you that you have type 1 diabetes (a condition where the body makes little or no insulin) or gestational diabetes (diabetes that starts during pregnancy)?",
+     "text_for_parent": null,
+     "original_text": "1) known diagnosis of type 1 diabetes or gestational diabetes",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Are you pregnant with more than one baby (such as twins or triplets)?",
+     "text_for_parent": null,
+     "original_text": "4) multifetal gestation",
+     "counts_against": "yes",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Do you plan to get your pregnancy care or give birth outside of UMMHC (UMASS Memorial Health Care)?",
+     "text_for_parent": null,
+     "original_text": "2) plan to receive prenatal care or delivery outside of UMMHC",
+     "counts_against": "yes",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Was your type 2 diabetes confirmed by a blood test, such as a hemoglobin A1c (average blood sugar over about 3 months) of 6.5% or higher, an oral glucose tolerance test (blood sugar test after a sugary drink) of 200 mg/dL or higher, or a fasting blood sugar of 126 mg/dL or higher?",
+     "text_for_parent": null,
+     "original_text": "3) established diagnosis of T2DM by laboratory criteria including hemoglobin A1c ≥6.5%, oral glucose tolerance test ≥200 mg/dL, or fasting plasma glucose ≥126 mg/dL",
+     "counts_against": "no",
+     "sensitive": false
+    }
+   ]
+  },
+  "NCT05390892": {
+   "last_update": "2026-04-13",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT05759468": {
+   "last_update": "2026-04-13",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT06003153": {
+   "last_update": "2026-07-08",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT06959277": {
+   "last_update": "2026-07-14",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you 55 years old or older?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 55 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Do you have type 2 diabetes (a long-term condition where your body has trouble using insulin, so your blood sugar runs high)?",
+     "text_for_parent": null,
+     "original_text": "Accepts Healthy Volunteers: No · Conditions: Peripheral Neuropathies, Peripheral Neuropathy Due to Chemotherapy, Peripheral Neuropathy With Type 2 Diabetes, Balance Control in Elderly, Gait Disorders",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Has a doctor diagnosed you with peripheral neuropathy (nerve damage, usually in the feet or legs, that can cause numbness, tingling, or pain), and is it written in your medical record or a doctor's note?",
+     "text_for_parent": null,
+     "original_text": "Clinical diagnosis of peripheral neuropathy prior to participating in the study as documented in the participant's medical record or by physician's note.",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "If your nerve damage came from chemotherapy (cancer drug treatment), has it been at least one year since your chemotherapy ended?",
+     "text_for_parent": null,
+     "original_text": "Individuals with chemo-induced peripheral neuropathy must be at least one-year post-chemotherapy, indicating that their PN has become a chronic condition.",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have problems with your walking and balance?",
+     "text_for_parent": null,
+     "original_text": "Self-reported gait and balance problems",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Can you do walking and balance tests without using a walking aid (such as a cane, crutches, or a walker)?",
+     "text_for_parent": null,
+     "original_text": "Able to complete all functional outcome measures without the use of an assistive device",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Can you stand on one leg for at least 30 seconds?",
+     "text_for_parent": null,
+     "original_text": "Ability to stand on one leg for at least 30 seconds (If the person can stand for at least 30 seconds, he/she is excluded because his/her balance is likely not impaired enough to benefit from Walkasins.)",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you weigh more than 300 pounds (about 136 kg)?",
+     "text_for_parent": null,
+     "original_text": "Weight of more than 300 pounds",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have another nerve or muscle and bone condition that moderately or severely affects your walking?",
+     "text_for_parent": null,
+     "original_text": "Other neurological or musculoskeletal conditions that moderately or severely impact walking",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have acute thrombophlebitis (a sudden, painful blood clot with swelling in a vein), including deep vein thrombosis (a blood clot in a deep vein, usually in the leg)?",
+     "text_for_parent": null,
+     "original_text": "Self-reported acute thrombophlebitis, including deep vein thrombosis",
+     "counts_against": "yes",
+     "sensitive": false
+    }
+   ]
+  },
+  "NCT07011147": {
+   "last_update": "2026-06-11",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT07271043": {
+   "last_update": "2026-05-29",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT07448974": {
+   "last_update": "2026-08-18",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT07468188": {
+   "last_update": "2026-03-12",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you between 18 and 40 years old?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 18 Years · Maximum Age: 40 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Is your sex female?",
+     "text_for_parent": null,
+     "original_text": "Sexes Eligible for Study: Female",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Do you have type 2 diabetes (a long-term condition where your body has trouble using insulin, so your blood sugar runs high)?",
+     "text_for_parent": null,
+     "original_text": "Accepts Healthy Volunteers: No · Conditions: Eating Disorders, Type 2 Diabetes",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Have you had type 2 diabetes (diagnosed by a doctor) for at least 6 months?",
+     "text_for_parent": null,
+     "original_text": "1.) Female sex 2) self-reported gender identity of \"woman\"; 3) age 18-40 years old; 4) diagnosed with T2D for at least 6 months; 5) experiencing at least one body image concern.",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have at least one concern about your body image (how you see or feel about your body)?",
+     "text_for_parent": null,
+     "original_text": "1.) Female sex 2) self-reported gender identity of \"woman\"; 3) age 18-40 years old; 4) diagnosed with T2D for at least 6 months; 5) experiencing at least one body image concern.",
+     "counts_against": "no",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Do you describe your own gender identity as \"woman\"?",
+     "text_for_parent": null,
+     "original_text": "1.) Female sex 2) self-reported gender identity of \"woman\"; 3) age 18-40 years old; 4) diagnosed with T2D for at least 6 months; 5) experiencing at least one body image concern.",
+     "counts_against": "no",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "In the last 12 months, have you been in the hospital for an eating disorder (a health problem with eating habits, such as anorexia, bulimia, or binge eating)?",
+     "text_for_parent": null,
+     "original_text": "Recent hospitalization for eating disorder within the last 12 months",
+     "counts_against": "yes",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "In the last 12 months, have you had diabetic ketoacidosis (a serious problem where blood sugar and acid levels get very high) that was related to an eating disorder?",
+     "text_for_parent": null,
+     "original_text": "Eating disorder related diabetic ketoacidosis within the last 12 months",
+     "counts_against": "yes",
+     "sensitive": true
+    },
+    {
+     "source": "ai",
+     "text": "Can you speak and understand English well?",
+     "text_for_parent": null,
+     "original_text": "restricted English proficiency",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have a developmental, thinking/memory, or mental health condition that would stop you from taking part in the study sessions?",
+     "text_for_parent": null,
+     "original_text": "developmental, cognitive, or psychiatric limitations that compromise participation in the intervention sessions and study.",
+     "counts_against": "yes",
+     "sensitive": true
+    }
+   ]
+  },
+  "NCT07521475": {
+   "last_update": "2026-08-03",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT07564414": {
+   "last_update": "2026-09-30",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you 18 years old or older?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 18 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Do you have type 2 diabetes (a long-term condition where your body has trouble using insulin, so your blood sugar runs high)?",
+     "text_for_parent": null,
+     "original_text": "Accepts Healthy Volunteers: No · Conditions: Obesity, Type 2 Diabetes",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Is your BMI (body mass index, a measure of weight compared with height) 35.0 or higher?",
+     "text_for_parent": null,
+     "original_text": "BMI≥ 35.0 kg/m^2.",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Was your most recent HbA1c (a blood test that shows your average blood sugar over about 3 months) less than 10%?",
+     "text_for_parent": null,
+     "original_text": "Participants without T2D: No history of T2D and HbA1c < 6.5% (48 millimoles per mole (mmol/mol)) Participants with T2D: A history of T2D and HbA1c < 10% (< 86 mmol/mol).",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Has your body weight changed by more than 5% in the 90 days before now?",
+     "text_for_parent": null,
+     "original_text": "A self-reported change in body weight > 5% within 90 days before screening, irrespective of medical records.",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "In the past 6 months, have you used a GLP-1 receptor agonist (a diabetes or weight-loss medicine such as semaglutide, liraglutide, dulaglutide or tirzepatide), any medicine that acts like GLP-1, or an amylin analogue (a medicine that acts like the hormone amylin, such as pramlintide)?",
+     "text_for_parent": null,
+     "original_text": "Use of any glucagon-like-peptide-1 receptor agonist (GLP-1 RA), including medication with GLP-1 RA activity, or amylin analogues, including medication with amylin activity, within 6 months before screening.",
+     "counts_against": "yes",
+     "sensitive": false
+    }
+   ]
+  },
+  "NCT07579702": {
+   "last_update": "2026-08-03",
+   "includes_children": true,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you between 14 and 75 years old?",
+     "text_for_parent": "Is your child between 14 and 75 years old?",
+     "original_text": "Minimum Age: 14 Years · Maximum Age: 75 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Is your most recent HbA1c (a blood test showing your average blood sugar over about 3 months) 7.5% or higher?",
+     "text_for_parent": "Is your child's most recent HbA1c (a blood test showing average blood sugar over about 3 months) 7.5% or higher?",
+     "original_text": "HbA1c ≥ 7.5%",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Have you had type 2 diabetes for at least 1 year, or type 1 diabetes for at least 6 months?",
+     "text_for_parent": "Has your child had type 2 diabetes for at least 1 year, or type 1 diabetes for at least 6 months?",
+     "original_text": "Type 1 diabetes diagnosis for at least 6 months or type 2 diabetes diagnosis for at least 1 year, based on Investigator's clinical judgment",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you take insulin as both a background (basal) insulin and meal-time (bolus) insulin, either by several shots a day or with an insulin pump (with or without automatic dosing)?",
+     "text_for_parent": "Does your child take insulin as both a background (basal) insulin and meal-time (bolus) insulin, either by several shots a day or with an insulin pump (with or without automatic dosing)?",
+     "original_text": "Basal/Bolus insulin delivery via multiple daily doses or insulin pump with or without automation",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you currently use a continuous glucose monitor (a sensor worn on the body that checks blood sugar all day)?",
+     "text_for_parent": "Does your child currently use a continuous glucose monitor (a sensor worn on the body that checks blood sugar all day)?",
+     "original_text": "Currently using a continuous glucose monitor",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Over the last 14 days, did you give yourself an average of 4 or more insulin boluses (meal-time or correction insulin doses that you start yourself) per day?",
+     "text_for_parent": "Over the last 14 days, did your child get an average of 4 or more insulin boluses (meal-time or correction insulin doses that you or your child start) per day?",
+     "original_text": "Average # of user-initiated boluses less than 4 per day over the 14 days prior to screening through review of device data or self-reported if non-pump user",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "In the past 6 months, have you had a low blood sugar event where another person had to help you because you were confused or unable to act, and they had to give you sugar, glucagon, or other emergency treatment?",
+     "text_for_parent": "In the past 6 months, has your child had a low blood sugar event where another person had to help because your child was confused or unable to act, and they had to give sugar, glucagon, or other emergency treatment?",
+     "original_text": "History of severe hypoglycemia in the past 6 months. Severe hypoglycemia is defined as an event that requires the assistance of another person due to altered mental and/or physical status, and requires another person to actively administer carbohydrate, glucagon, or other resuscitative actions.",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "In the past 6 months, have you had diabetic ketoacidosis (DKA, a serious problem from very high blood sugar and acid build-up) or hyperosmolar hyperglycemic state (HHS, a serious problem from very high blood sugar with dehydration) that was not caused by another illness or an insulin pump failure?",
+     "text_for_parent": "In the past 6 months, has your child had diabetic ketoacidosis (DKA, a serious problem from very high blood sugar and acid build-up) or hyperosmolar hyperglycemic state (HHS, a serious problem from very high blood sugar with dehydration) that was not caused by another illness or an insulin pump failure?",
+     "original_text": "History of diabetic ketoacidosis (DKA) or hyperosmolar hyperglycemic state (HHS) in the past 6 months, unrelated to an intercurrent illness or infusion failure",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "If you have type 2 diabetes, have you taken a sulfonylurea (a diabetes pill such as glipizide, glyburide, or glimepiride) in the past 4 weeks?",
+     "text_for_parent": "If your child has type 2 diabetes, has your child taken a sulfonylurea (a diabetes pill such as glipizide, glyburide, or glimepiride) in the past 4 weeks?",
+     "original_text": "Has type 2 diabetes and is taking sulfonylureas in the 4 weeks prior to screening",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Are you pregnant or breastfeeding?",
+     "text_for_parent": "Is your child pregnant or breastfeeding?",
+     "original_text": "Pregnant or lactating, or of childbearing potential and not on acceptable form of birth control (acceptable forms of contraception include abstinence, barrier methods such as condoms, hormonal contraceptives, intrauterine device, surgical sterilization such as tubal ligation or hysterectomy, or vasectomized partner).",
+     "counts_against": "yes",
+     "sensitive": true
+    }
+   ]
+  },
+  "NCT07654374": {
+   "last_update": "2026-09-11",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you between 18 and 79 years old?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 18 Years · Maximum Age: 79 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Is your BMI (body mass index, a measure of weight compared to height) 27.0 or higher?",
+     "text_for_parent": null,
+     "original_text": "Have a BMI ≥27.0 kg/m2 at Screening",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Was your last HbA1c (a blood test showing average blood sugar over about 3 months) between 6.5% and 10%?",
+     "text_for_parent": null,
+     "original_text": "Have a diagnosis of T2DM according to the WHO classification or other locally applicable standards, with HbA1c ≥6.5% (≥53 mmol/mol) to ≤10% (86 mmol/mol) at Screening",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have type 1 diabetes, a past episode of ketoacidosis (a dangerous build-up of acid in the blood from very high blood sugar), a past hyperosmolar state or coma (a severe problem from very high blood sugar), or any type of diabetes other than type 2?",
+     "text_for_parent": null,
+     "original_text": "Have type 1 diabetes, history of ketoacidosis or hyperosmolar state/coma, or any other types of diabetes except T2DM.",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "In the last 180 days, have you had one or more episodes of severe low blood sugar, or one or more episodes where your blood sugar dropped low without you feeling any warning signs?",
+     "text_for_parent": null,
+     "original_text": "Have had 1 or more episode of severe hypoglycemia and/or 1 or more episode of hypoglycemia unawareness within 180 days prior to Screening.",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Are you now getting treatment, or planning to get treatment, for diabetic retinopathy (eye damage caused by diabetes) or macular edema (swelling in the back of the eye)?",
+     "text_for_parent": null,
+     "original_text": "Are currently receiving or planning to receive treatment for diabetic retinopathy and/or macular edema",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Has your body weight changed by more than 5 kg (11 pounds) in the last 3 months?",
+     "text_for_parent": null,
+     "original_text": "Self-reported change in body weight >5 kg (11 pounds) within 3 months before Screening.",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Have you had, or are you planning to have, any treatment for obesity, either surgery or another type of procedure?",
+     "text_for_parent": null,
+     "original_text": "Have prior or planned surgical or non-surgical treatment for obesity.",
+     "counts_against": "yes",
+     "sensitive": false
+    }
+   ]
+  },
+  "NCT07662109": {
+   "last_update": "2026-08-31",
+   "includes_children": false,
+   "available": true,
+   "questions": [
+    {
+     "source": "listing",
+     "text": "Are you 18 years old or older?",
+     "text_for_parent": null,
+     "original_text": "Minimum Age: 18 Years",
+     "counts_against": "no"
+    },
+    {
+     "source": "listing",
+     "text": "Do you have type 2 diabetes (a long-term condition where your body has trouble using insulin, so your blood sugar runs high)?",
+     "text_for_parent": null,
+     "original_text": "Accepts Healthy Volunteers: No · Conditions: Type 2 Diabetes Mellitus",
+     "counts_against": "no"
+    },
+    {
+     "source": "ai",
+     "text": "Were you diagnosed with type 2 diabetes at least 90 days ago?",
+     "text_for_parent": null,
+     "original_text": "Diagnosed with Type 2 Diabetes Mellitus (T2DM) for at least 90 days prior to screening",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Was your most recent HbA1c (a blood test that shows your average blood sugar over about 3 months) between 7% and 10.5%?",
+     "text_for_parent": null,
+     "original_text": "HbA1c value of ≥ 7% to ≤ 10.5% (53 to 91.3 mmol/mol)",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Is your body mass index (BMI, a number based on your height and weight) 23 kg/m2 or more?",
+     "text_for_parent": null,
+     "original_text": "Body mass index (BMI) of ≥ 23 kg/m2 at screening",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Has your body weight stayed stable for the past 90 days?",
+     "text_for_parent": null,
+     "original_text": "Stable body weight (self-reported or documented) for 90 days prior to screening",
+     "counts_against": "no",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Do you have type 1 diabetes, or diabetes caused by another medical condition (including a form you were born with), or have you ever had ketoacidosis (a dangerous build-up of acid in the blood) or hyperosmolar coma (a coma caused by very high blood sugar)?",
+     "text_for_parent": null,
+     "original_text": "Type 1 Diabetes, secondary forms of diabetes (including congenital forms), or history of ketoacidosis or hyperosmolar coma",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "In the past 180 days, have you had more than one episode of severe low blood sugar, or do you have trouble feeling or recognizing the warning signs of low blood sugar?",
+     "text_for_parent": null,
+     "original_text": "Have had more than one episode of severe hypoglycemia within 180 days prior to screening or has a history of hypoglycemia unawareness or poor recognition of hypoglycemic symptoms",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Have you ever had pancreatitis (swelling of the pancreas), either sudden or long-lasting?",
+     "text_for_parent": null,
+     "original_text": "History of acute or chronic pancreatitis",
+     "counts_against": "yes",
+     "sensitive": false
+    },
+    {
+     "source": "ai",
+     "text": "Have you or a family member ever had medullary thyroid cancer (a rare cancer of the thyroid gland) or multiple endocrine neoplasia type 2 (a rare condition that runs in families and causes tumors in hormone glands)?",
+     "text_for_parent": null,
+     "original_text": "History/family history of medullary thyroid cancer or multiple endocrine neoplasia type 2",
+     "counts_against": "yes",
+     "sensitive": false
+    }
+   ]
+  },
+  "NCT07662135": {
+   "last_update": "2026-09-02",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  },
+  "NCT07797335": {
+   "last_update": "2026-09-01",
+   "includes_children": false,
+   "available": false,
+   "reason": "needs_review"
+  }
+ }
+}
